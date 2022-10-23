@@ -3,9 +3,96 @@
     margin: 0;
     box-sizing: border-box;
 }
+.taikhoan{
+    position: relative;
+    background-image:url(../img/logo/taikhoan.png) ;
+     background-size: cover; 
+     height: 55px;
+    width: 55px;
+    margin-left: 20px;
+    margin-top: 42px;
+  }
+  .form1{
+    position: absolute;
+    display: none;
+  }
+  .taikhoan:hover>.form1{
+    display:block;
+    margin-top: 57px;
+    margin-left: -150px;
+  }
+  .nav-menu{
+    color: white;
+    font-weight: bold;
+  }
+  .header{
+    border: 2px solid white;
+    background-color: rgb(117, 198, 246);
+  }
+  .logo{
+    margin-left:150px;
+    height:130px;
+    width:150px;
+  }
+  .timkiem{
+    margin-left:50px ; margin-top:40px;
+  }
+  .txtTK{
+    width: 600px; height: 55px;
+    border: 1px solid gray;
+  }
+  .btnTK{
+    height: 55px;
+    width: 150px;
+    margin-top: -5px;
+  }
+  .iconTK{
+    font-size: 30px;
+    color:whitesmoke;
+  }
+  .footer{
+    background-color: rgb(117, 198, 246);
+    padding-top:15px 
+  }
+  .iconGH{
+    height: 55px;
+    width: 55px;
+    margin-left: 20px;
+    margin-top: -3px;
+  }
+  .btnDK{
+    border: 1px solid red; color: red;
+  }
+  .iconTB{
+    height: 55px;
+    width: 55px;
+    margin-left: 20px;
+    margin-top: 42px;
+  }
+  
+  .menu{
+    background-color:blue; 
+    border-top: 3px solid white;
+  }
+  .nav-i:hover>.nav-menu{
+    color: yellow;
+  }
+  .footer-h{
+    text-align:center;
+     border-bottom: 2px solid gray ;
+     padding-bottom: 10px;
+  }
+
+ .footer-final
+ {
+  margin-left:20px;
+ }
+ .nav-f{
+  color: black;
+
+ }
+ .nav-if:hover>.nav-f{
+  color: red;
+ }
 
 
-/* Header */
-
-
-/* Footer */

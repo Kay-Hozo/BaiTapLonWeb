@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.1.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <style>
+      .taikhoan{
+        position: relative;
+      }
+      .form1{
+        position: absolute;
+        display: none;
+      }
+      .taikhoan:hover>.form1{
+        display:block;
+        margin-top: 57px;
+        margin-left: -10px;
+      }
+      .nav-link{
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+
+</head>
+<body>
+  <!--Phần header-->
+   <div class="container-fuild  bg-primary " style="border: 2px solid white;">
+       <div class="row">
+           <img src="../IMG/logo.jpg" class="img-fuild" alt="" height="130" width="150px" style="margin-left:150px;">
+          <div class="row">
+            <div class="form-group" style="margin-left:50px ; margin-top:40px;">
+                <input type="text"  name="txtTK" id="txtTK" placeholder="Tìm kiếm sản phẩm.." style="width: 600px; height: 55px;">
+                <input type="button" value="Tìm kiếm" class="btn-info" style="height: 55px; width:150px ;">
+                <img src="../IMG/giohang1.png" class="rounded " alt=""  width="70" style="margin-left: 25px; margin-top: -3px;">
+                 
+            </div>
+            <div class="rounded taikhoan" style="background-image:url(../IMG/taikhoan.png) ; background-size: cover; height: 55px ; width: 70px; margin-left: 20px; margin-top: 40px;">
+              <div class="form1">
+                <div class="form bg-white" >
+                    <a href="#" class="nav-link">
+                      <input type="button" value="Đăng nhập" class=" btn btn-danger" style="width: 250px;">
+                    </a>
+                    <a href="#" class="nav-link">
+                      <input type="button" value="Đăng ký" class="btn" style="background-color: white; border: 1px solid red; color: red; width: 250px;">
+                    </a>
+                    <a href="#" class="nav-link">
+                      <input type="button" value="Đăng nhập bằng facebook" class="btn btn-primary" style="width:250px ;">
+                    </a>
+                </div>
+             </div>
+              
+            </div>
+            <div class="rounded thongbao" style="background-image:url(../IMG/thongbao.png) ; background-size: cover; height: 55px; width: 80px; margin-top: 40px; margin-left: 20px; "></div>
+          </div>
+         
+            
+              
+        </div>
+        <div class="row justify-content-center " style="background-color:rgb(49, 225, 82) ; border-top: 2px solid white;">
+          <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#" data-toggle="tab" class="nav-link" >Giới Thiệu</a></li>
+            <li class="nav-item"><a href="#"  data-toggle="tab" class="nav-link">Sách Giáo Khoa</a></li>
+            <li class="nav-item"><a href="#" data-toggle="tab"  class="nav-link">Sách Tham Khảo</a></li>
+            <li class="nav-item"><a href="#" data-toggle="tab" class="nav-link">Sách Ngoại Ngữ</a></li>
+            <li class="nav-item"><a href="#"  data-toggle="tab" class="nav-link">Truyện tranh</a></li>
+            <li class="nav-item"><a href="#"  data-toggle="tab" class="nav-link">Tiểu Thuyết</a></li>
+            <li class="nav-item"><a href="#" data-toggle="tab"  class="nav-link">Từ điển</a></li>
+            <li class="nav-item"><a href="#" data-toggle="tab"  class="nav-link">Sách Kinh Tế</a></li>
+            <li class="nav-item"><a href="#" data-toggle="tab"  class="nav-link">Sách Thiếu Nhi</a></li>
+            <li class="nav-item"><a href="#" data-toggle="tab"  class="nav-link">Kỹ năng sống</a></li>
+          </ul>
+        </div>
+           
+            
+       </div>
+       <!--Phần container-->
+       <div class="container">
+         <div class="row">
+           <div class="col-12">
+             col-12
+           </div>
+           <div class="col-12">
+            col-12
+          </div>
+          <div class="col-12">
+            col-12
+          </div>
+          <div class="col-12">
+            col-12
+          </div>
+         </div>
+       </div>
+    <!--Phần footer-->
+    <div class="container-fluid">
+       <div class="row">
+         <div class="col-3  " style="background-color:rgb(222, 218, 218)">
+            <h4 style="text-align:center; border-bottom: 2px solid gray ;">DỊCH VỤ</h4>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="" class="nav-link" >Giới thiệu Nhà Sách</a></li>
+              <li class="nav-item"><a href="" class="nav-link" >Điều khoản sử dụng</a></li>
+              <li class="nav-item"><a href="" class="nav-link" >Chính sách bảo mật</a></li>
+              <li class="nav-item"><a href="" class="nav-link" >Chính sách bán hàng</a></li>
+              <li class="nav-item"><a href="" class="nav-link" >Phương thức vận chuyển</a></li>
+            </ul>
+         </div>
+         <div class="col-3" style="background-color:rgb(222, 218, 218)">
+          <h4 style="text-align:center; border-bottom: 2px solid gray ;">TÀI KHOẢN CỦA TÔI</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="" class="nav-link" >Đăng nhập</a></li>
+            <li class="nav-item"><a href="" class="nav-link" >Tạo tài khoản</a></li>
+            <li class="nav-item"><a href="" class="nav-link" >Lịch sử mua hàng</a></li>
+            <li class="nav-item"><a href="" class="nav-link" >Chi tiết tài khoản</a></li>
+          </ul>
+         </div>
+         <div class="col-3" style="background-color:rgb(222, 218, 218)">
+          <h4 style="text-align:center; border-bottom: 2px solid gray ;">HỖ TRỢ</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="" class="nav-link" >Chính sách đổi-trả-hoàn tiền</a></li>
+            <li class="nav-item"><a href="" class="nav-link" >Chính sách bảo hành-bồi hoàn</a></li>
+            <li class="nav-item"><a href="" class="nav-link" >Chính sách khách sỉ</a></li>
+          </ul>
+         </div>
+         <div class="col-3" style="background-color:rgb(222, 218, 218)">
+          <h4 style="text-align:center; border-bottom: 2px solid gray ;">LIÊN HỆ</h4>
+          <p>Hotline: 1900 1060 <br>
+            Email:hotro@bookstore.com
+          </p>
+
+         </div>
+       </div>
+       <div class="row " style="background-color:rgb(222, 218, 218) ;">
+        <div class="col-12">
+             <h4 style="padding-top:15px ; border-top:1px solid gray;">BOOKSTORE</h4>
+             <p>Trụ sở chính :Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM <br>
+              Công Ty Cổ Phần Phát Hành Sách TP HCM - BOOKSTORE - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam <br>
+              Bookstore nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống trên toàn quốc</p>
+        </div>
+       </div>
+    </div>  
+  
+</body>
+</html>

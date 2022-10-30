@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ĐĂNG NHẬP</title>
+    <title>GIỎ HÀNG</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/jquery-3.6.1.min.js"></script>
-    <scrip src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./../Font awesome/css/fontawesome.css">
     <link rel="stylesheet" href="./../Font awesome/css/brands.css">
     <link rel="stylesheet" href="./../Font awesome/css/solid.css">
     <link rel="stylesheet" href="./../Font awesome/css/all.css">
     <link rel="stylesheet" href="./../css/style.css">
-   <script src="../js/main.js"></script>
-
 </head>
 <body>
   <!--Phần header-->
@@ -70,36 +68,133 @@
             
        </div>
        <!--Phần container-->
-       <div class="container form-DN">
-        <form  class="form justify-content-center">
-             <h3 class="form-DN-h3">ĐĂNG NHẬP</h3>
-             <div class="form-group" style="margin-bottom:20px ;">
-               
-               <label for="txtSDT">Số điện thoại</label><br>
-               <input type="text" name="txtSDT" id="txtSDT" class="form-control" placeholder="Nhập số điện thoại" required><br>
-               <span class="text-danger" style="text-align:center ;" id="tbSDT"></span>
-             </div>
-             <div class="form-group" style="margin-bottom:20px ;">
-               <label for="txtPass">Mật khẩu</label><br>
-               <div class="input-group">
-               <input type="password" name="txtPass" id="txtPass" placeholder="Nhập mật khẩu" class="form-control" required>
-               <div class="input-group-append">
-                 <button class="btn input-group-text " id="btnPass"><i class="fas fa-eye"></i></button>
+       <div class="container bg-white mt-3">
+         <h3>GIỎ HÀNG</h3>
+         <div class="row table-responsive-sm tab-SP">
+           <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th class="col-sm-7">Sản phẩm</th>
+                <th class="col-sm-2">Số lượng</th>
+                <th class="col-sm-3">Thành tiền</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                <div style="text-align: left;">
+                 <input type="checkbox" name="txtSP" id="txtSP">
+                </div>
+                 <img class="img-thumbnail img-SP " src="../img/books/image1.jpg" alt=""  align="left">
+                 <p class="p-SP">Người Giàu Có Nhất Thành Babylon</p>
+                 <br>
+                 <p id="txtDG">99.000</p>
+                </td>
+                <td>
                   
+                   
+                 <button type="button "class="btn-light btn-SP" id="btnCong" >+</button>
+                 <span id="txtSL" >1</span>
+                 <button type="button "class="btn-light btn-SP" id="btnTru" >-</button>
+                </td>
+                <td>
+                  <div class="row-SP"></div>
+                  <span class="text-danger" id="txtTong" style="font-weight: bold;">99.000</span>
+                  <button type="button" class="btn btn-primary" style="margin-left:100px ;">Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="text-align: left;">
+                    <input type="checkbox" name="txtSP" id="txtSP">
+                   </div>
+                    <img class="img-thumbnail img-SP " src="../img/books/image2.jpg" alt=""  align="left">
+                    <p class="p-SP">Doraemon  </p>
+                    <br>
+                    <p id="txtDG">16.000</p>
+                </td>
+                <td>
+                  <button type="button "class="btn-light btn-SP" >+</button>
+                  <span id="txtSL">1</span>
+                  <button type="button "class="btn-light btn-SP" >-</button>
+                </td>
+                <td>
+                  <div class="row-SP"></div>
+                  <span class="text-danger"id="txtTong" style="font-weight: bold;">16.000</span>
+                  <button type="button" class="btn btn-primary" style="margin-left:100px ;">Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="text-align: left;">
+                    <input type="checkbox" name="txtSP" id="txtSP">
+                   </div>
+                    <img class="img-thumbnail img-SP " src="../img/books/image3.jpg" alt=""  align="left">
+                    <p class="p-SP">Từ ngữ Anh - Việt</p>
+                    <br>
+                    <p id="txtDG">65.000</p>
+                </td>
+                <td>
+                  <button type="button "class="btn-light btn-SP" >+</button>
+                  <span id="txtSL">1</span>
+                  <button type="button "class="btn-light btn-SP" >-</button>
+                </td>
+                <td>
+                  <div class="row-SP"></div>
+                  <span class="text-danger"id="txtTong" style="font-weight: bold;">65.000</span>
+                  <button type="button" class="btn btn-primary" style="margin-left:100px ;">Xóa</button>
+                </td>
 
-               </div>
-              </div>
-              <span class="text-danger span-MK" style="text-align:center ;" id="tbMK"></span>
-             </div>
-             <div id="thongbao1" style="text-align: right;"><a href="#" class="text-danger">Quên mật khẩu?</a></div><br>
-             <div id="thongbao2" class="text-danger" style="text-align: center;"></div>
-             <div class="form-group">
-               <button type="button" class="btn btn-danger btn-block" id="txtDN" disabled>Đăng nhập</button><br>
-               <button type="button" class="btn btn-primary btn-block" id="txtDNF">Đăng nhập bằng facebook</button>
-               <br>
-             </div>
-        </form>
-      </div>
+              </tr>
+               
+            </tbody>
+           </table>
+         </div>
+         </div>
+         <div class="container bg-white">
+          <div class="row table-responsive-sm tab-SP ">
+            <table class="table">
+              <thead class="thead-light">
+                <tr>
+                  <th  class="col-4">Thành tiền</th>
+                  <th class="col-4"></th>
+                  <th class="col-4"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Voucher
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    <button type="button" class="btn" style="padding-left: 170px;">Chọn hoặc nhập mã></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td >Tổng thanh toán</td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    <span id="txtThanhTien" class="text-danger" style="font-weight: bold; padding-left: 190px; font-size: 20px;">180.000</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <a href="../html/dathang.html">
+                      <button type="button" class="btn btn-primary btn-block">Đặt hàng</button>
+                    </a>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+         </div>
     <!--Phần footer-->
     <div class="container-fluid">
        <div class="row">

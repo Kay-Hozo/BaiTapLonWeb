@@ -3,134 +3,122 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-  background-color: rgb(247, 241, 241);
+
+:root {
+    --primary-green-color: #1dbb90;
+    --primary-blue-color: #1eaace;
+    --primary-black-color: #1d1d1d;
+    --white-color: #fff;
+    --text-color: #333;
 }
-.taikhoan{
+
+body {
+    background-color: var(--white-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+
+
+/* header */
+
+header {
+    background-color: var(--primary-blue-color);
+}
+
+.header-logo-img {
+    width: 80px;
+}
+
+.header-search {
+    flex: 0.8;
+}
+
+.search-inp {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 80%;
+}
+
+.search-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.header-exten>li {
+    width: 60px;
+    font-size: 1.6rem;
+    margin: 0 10px;
     position: relative;
-    background-image:url(../img/logo/taikhoan.png) ;
-     background-size: cover; 
-     height: 55px;
-    width: 55px;
-    margin-left: 20px;
-    margin-top: 42px;
-  }
-  .form1{
+    text-align: center;
+}
+
+.header-exten i {
+    color: var(--white-color);
+}
+
+.submenu {
     position: absolute;
+    top: 100%;
+    left: -50%;
+    padding: 8px;
+    border-radius: 5px;
+    list-style: none;
     display: none;
-  }
-  .taikhoan:hover>.form1{
-    display:block;
-    margin-top: 57px;
-    margin-left: -150px;
-  }
-  .nav-menu{
-    color: white;
+}
+
+.menu li:hover>.submenu {
+    display: block;
+}
+
+.menu-category {
+    border: none;
+    background-color: #eee;
+}
+
+.menu-category .nav-link {
+    color: var(--primary-black-color);
+    font-size: 0.8rem;
+}
+
+.menu-category .nav-link:hover {
+    text-decoration: underline;
+}
+
+
+/* footer */
+
+footer {
+    background-color: var(--primary-black-color);
+    padding: 28px 0;
+    color: var(--white-color);
+    font-size: 0.8rem;
+}
+
+.ft-title {
     font-weight: bold;
-  }
-  .header{
-    border: 2px solid white;
-    background-color: rgb(117, 198, 246);
-  }
-  .logo{
-    margin-left:150px;
-    height:130px;
-    width:150px;
-  }
-  .timkiem{
-    margin-left:50px ; margin-top:40px;
-  }
-  .txtTK{
-    width: 600px; height: 55px;
-    border: 1px solid gray;
-  }
-  .btnTK{
-    height: 55px;
-    width: 150px;
-    margin-top: -5px;
-  }
-  .iconTK{
-    font-size: 30px;
-    color:whitesmoke;
-  }
-  .footer{
-    background-color: rgb(117, 198, 246);
-    padding-top:15px 
-  }
-  .iconGH{
-    height: 55px;
-    width: 55px;
-    margin-left: 20px;
-    margin-top: -3px;
-  }
-  .btnDK{
-    border: 1px solid red; color: red;
-  }
-  .iconTB{
-    height: 55px;
-    width: 55px;
-    margin-left: 20px;
-    margin-top: 42px;
-  }
-  
-  .menu{
-    background-color:blue; 
-    border-top: 3px solid white;
-  }
-  .nav-i:hover>.nav-menu{
-    color: yellow;
-  }
-  .footer-h{
-    text-align:center;
-     border-bottom: 2px solid gray ;
-     padding-bottom: 10px;
-  }
-
- .footer-final
- {
-  margin-left:20px;
- }
- .nav-f{
-  color: black;
-
- }
- .nav-if:hover>.nav-f{
-  color: red;
- }
- .form-DN{
-  width: 750px;
-  background-color: white;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  
-}
-.form-DN-h3
-{
-  text-align:center; padding: 20px;
-}
-.p-SP{
-  font-size: 18px;
-  padding-top: 10px;
-  
-}
-.img-SP{
-  margin-right: 35px;
-  width: 100px;
-  height: 130px;
-  margin-left: 35px;
-}
-.btn-SP{
-  margin-top: 60px; width: 20px;
-}
-.row-SP{
-  margin-top: 60px;
-}
-.tab-SP{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px 10px;
-}
-.frm-DH{
-  width: 500px;
+    font-size: 1.2rem;
 }
 
+.ft-link {
+    font-size: 0.8rem;
+    color: #D2D3D5;
+}
+
+.ft-link:hover {
+    color: var(--primary-blue-color);
+    text-decoration: none;
+    transition: all 0.8s;
+}
+
+footer p {
+    margin: 0;
+}
+
+.ft-final-title {
+    margin-top: 20px;
+}
+
+.ft-final-content {
+    font-size: 0.8rem;
+}

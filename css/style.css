@@ -8,12 +8,13 @@
     --primary-green-color: #1dbb90;
     --primary-blue-color: #1eaace;
     --primary-black-color: #1d1d1d;
+    --primary-grey-color: #eee;
     --white-color: #fff;
     --text-color: #333;
 }
 
 body {
-    background-color: var(--white-color);
+    background-color: var(--primary-grey-color);
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -65,6 +66,24 @@ header {
     border-radius: 5px;
     list-style: none;
     display: none;
+    z-index: 100;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    animation: notifyScale ease-in 0.4s;
+}
+
+@keyframes notifyScale {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav {
+    background-color: var(--white-color);
 }
 
 .menu li:hover>.submenu {
@@ -73,7 +92,6 @@ header {
 
 .menu-category {
     border: none;
-    background-color: #eee;
 }
 
 .menu-category .nav-link {
@@ -83,6 +101,58 @@ header {
 
 .menu-category .nav-link:hover {
     text-decoration: underline;
+}
+
+
+/* content */
+
+.content {
+    padding: 20px;
+}
+
+.section-block {
+    margin-top: 20px;
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.product-box {
+    margin-top: 20px;
+}
+
+.product-item {
+    transition: all 0.4s;
+}
+
+.product-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-link,
+.product-link:hover {
+    text-decoration: none;
+}
+
+.product-title {
+    font-size: 1rem;
+    color: var(--primary-black-color);
+}
+
+.product-price {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.rating {
+    margin-bottom: 0;
+}
+
+.btn-more {
+    background-color: transparent;
+    color: var(--primary-blue-color);
+    margin-top: 30px
 }
 
 
@@ -122,23 +192,24 @@ footer p {
 .ft-final-content {
     font-size: 0.8rem;
 }
-.label
-{
-   font-size: 16px;
+
+.label {
+    font-size: 16px;
 }
-.title{
-    padding-left: 500px; font-weight:bold ;
+
+.title {
+    padding-left: 500px;
+    font-weight: bold;
 }
-.img-SP
-{
+
+.img-SP {
     width: 100px;
     height: 150px;
     margin-right: 20px;
     margin-left: 40px;
 }
-.btn-SP
-{
+
+.btn-SP {
     margin-top: 80px;
     width: 20px;
-    
 }

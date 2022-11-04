@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,173 +14,175 @@
     <link rel="stylesheet" href="./../Font awesome/css/solid.css">
     <link rel="stylesheet" href="./../Font awesome/css/all.css">
     <link rel="stylesheet" href="./../css/style.css">
-     <script src="../js/main.js"></script>
+    <script src="../js/main.js"></script>
 
 </head>
+
 <body>
     <!--Phần header-->
     <div class="wrapper">
-      <header>
-          <div class="container navbar">
-              <a href="index.html" class="header-logo-link navbar-brand">
-                  <img src="./../img/logo/logo1.jpg" alt="" class="header-logo-img rounded-circle">
-              </a>
+        <header>
+            <div class="container navbar">
+                <a href="index.html" class="header-logo-link navbar-brand">
+                    <img src="./../img/logo/logo1.jpg" alt="" class="header-logo-img rounded-circle">
+                </a>
 
-              <div class="header-search">
-                  <form action="" class="form-inline">
-                      <input type="text" name="txtTK" id="txtTK" placeholder="Tìm kiếm sản phẩm.." class="form-control search-inp col-10">
-                      <button type="button" class="btn btn-primary search-btn col-2"><i class="fas fa-search search-logo iconTK"></i></button>
-                  </form>
-              </div>
-
-              <ul class="header-exten menu navbar-nav navbar-expand-sm">
-                  <li class="cart nav-item">
-                      <a href="giohang.html" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
-                  </li>
-                  <li class="account nav-item">
-                      <a href="" class="nav-link"><i class="fas fa-user"></i></a>
-                      <ul class="submenu bg-white">
-                          <li class="">
-                              <a href="../html/dangnhap.html" class="nav-link">
-                                  <input type="button" value="Đăng nhập" class="btn btn-primary btn-block">
-                              </a>
-                          </li>
-                          <li class="">
-                              <a href="../html/dangky.html" class="nav-link">
-                                  <input type="button" value="Đăng ký" class="btn bg-light btn-block btnDK">
-                              </a>
-                          </li>
-                      </ul>
-                  </li>
-                  <li class="notify nav-item">
-                      <a href="" class="nav-link"><i class="fas fa-bell"></i></a>
-                  </li>
-              </ul>
-          </div>
-      </header>
-      <nav>
-          <div class="container justify-content-center menu ">
-              <ul class="nav nav-tabs menu-category">
-                  <li class="nav-item nav-i"><a href="#" data-toggle="tab" class="nav-link nav-menu">Giới Thiệu</a></li>
-                  <li class="nav-item nav-i"><a href="#" data-toggle="tab" class="nav-link  nav-menu">Sách Giáo Khoa</a></li>
-                  <li class="nav-item nav-i"><a href="#" data-toggle="tab" class="nav-link  nav-menu">Sách Tham Khảo</a></li>
-                  <li class="nav-item nav-i"><a href="#" data-toggle="tab" class="nav-link  nav-menu">Sách Ngoại Ngữ</a></li>
-                  <li class="nav-item nav-i"><a href="#" data-toggle="tab" class="nav-link  nav-menu">Truyện tranh</a></li>
-                  <li class="nav-item nav-i"><a href="#" data-toggle="tab" class="nav-link nav-menu">Tiểu Thuyết</a></li>
-                  <li class="nav-item nav-i"><a href="#" data-toggle="tab" class="nav-link  nav-menu">Từ điển</a></li>
-                  <li class="nav-item nav-i"><a href="#" data-toggle="tab" class="nav-link  nav-menu">Sách Kinh Tế</a></li>
-                  <li class="nav-item nav-i"><a href="#" data-toggle="tab" class="nav-link  nav-menu">Sách Thiếu Nhi</a></li>
-                  <li class="nav-item nav-i"><a href="#" data-toggle="tab" class="nav-link  nav-menu">Đời sống</a></li>
-              </ul>
-          </div>
-      </nav>
-      <div class="content">
-        <div class="container bg-white mt-3">
-          <form action="" class="form">
-             <h3 class="title">ĐĂNG KÝ</h3>
-              <div class="from-group" style="margin-bottom:20px ;">
-                  <label for="" class="label">Số điện thoại</label>
-                  <div class="input-group">
-                  <input type="text" name="txtSDT" id="txtSDT" class="form-control" placeholder="Nhập số điện thoại" required>
-                  <div class="input-group-append">
-                    <button class="btn input-group-text text-primary bg-white " style="border-left: none;" >Gửi mã OTP</button>
-                  </div>
-                  
+                <div class="header-search">
+                    <form action="" class="form-inline">
+                        <input type="text" name="txtTK" id="txtTK" placeholder="Tìm kiếm sản phẩm.." class="form-control search-inp col-10">
+                        <button type="button" class="btn btn-primary search-btn col-2"><i class="fas fa-search search-logo iconTK"></i></button>
+                    </form>
                 </div>
-                <span class="text-danger" id="tbSDT"></span>
-              </div>
-              <div class="from-group" style="margin-bottom:20px ;">
-                  <label for="" class="label">Mã xác nhận OTP</label>
-                  <input type="text" name="txtOTP" id="txtOTP" class="form-control" placeholder="6 ký tự" required>
-                  <span class="text-danger" id="tbOTP"></span>
-              </div>
-              <div class="from-group" style="margin-bottom:20px ;">
-                  <label for="" class="label">Mật khẩu</label>
-                  <input type="text" name="txtMK" id="txtPass" class="form-control" placeholder="Nhập mật khẩu" required>
-                  <span class="text-danger" id="tbMK"></span>
-              </div>
-              <div class="form-group">
-                  <button type="button" class="btn btn-primary btn-block" id="txtDN" disabled>Đăng Ký</button>
-                  <button type="button" class="btn btn-block" >Bỏ qua</button>
-                
-              </div>
-              <div style="text-align:center ; padding-bottom: 20px;" class="label">
-                  Bằng việc đăng ký, bạn đã đồng ý với Fahasa.com về
-                 <a href="">Điều khoản dịch vụ</a> & <a href="">Chính sách bảo mật</a>
-              </div>
-          </form>
-      </div>
-      </div>
-      <footer>
-          <div class="container">
-              <div class="row">
-                  <div class="col-6 col-sm-4 col-md-3 col-xl-3 ft-block">
-                      <h4 class="ft-title">DỊCH VỤ</h4>
-                      <ul class="nav flex-column">
-                          <li class="ft-item">
-                              <a href="" class="ft-link">Giới thiệu Nhà Sách</a>
-                          </li>
-                          <li class="ft-item">
-                              <a href="" class="ft-link">Điều khoản sử dụng</a>
-                          </li>
-                          <li class="nav-if">
-                              <a href="" class="ft-link">Chính sách bảo mật</a>
-                          </li>
-                          <li class="ft-item">
-                              <a href="" class="ft-link">Chính sách bán hàng</a>
-                          </li>
-                          <li class="ft-item">
-                              <a href="" class="ft-link">Phương thức vận chuyển</a>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="col-6 col-sm-4 col-md-3 col-xl-3 ft-block">
-                      <h4 class="ft-title">TÀI KHOẢN</h4>
-                      <ul class="nav flex-column">
-                          <li class="ft-item">
-                              <a href="" class="ft-link">Đăng nhập</a>
-                          </li>
-                          <li class="ft-item">
-                              <a href="" class="ft-link">Tạo tài khoản</a>
-                          </li>
-                          <li class="ft-item">
-                              <a href="" class="ft-link">Lịch sử mua hàng</a>
-                          </li>
-                          <li class="ft-item">
-                              <a href="" class="ft-link">Chi tiết tài khoản</a>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="col-6 col-sm-4 col-md-3 col-xl-3 ft-block">
-                      <h4 class="ft-title">HỖ TRỢ</h4>
-                      <ul class="nav flex-column">
-                          <li class="ft-item">
-                              <a href="" class="ft-link">Chính sách đổi trả</a>
-                          </li>
-                          <li class="ft-item">
-                              <a href="" class="ft-link">Chính sách bảo hành</a>
-                          </li>
-                          <li class="ft-item">
-                              <a href="" class="ft-link">Chính sách giao hàng</a>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="col-6 col-sm-4 col-md-3 col-xl-3 ft-block">
-                      <h4 class="ft-title">LIÊN HỆ</h4>
-                      <p>Hotline: <a href="tel: 1900 1060" class="ft-link">1900 1060</a></p>
-                      <p>Email: <a href="mailto: hotro@bookstore.com" class="ft-link">hotro@bookstore.com</a></p>
-                  </div>
-              </div>
-              <div class="row ft-block">
-                  <div class="col-12">
-                      <h4 class="ft-final-title">BOOKSTORE</h4>
-                      <p class="ft-final-content">Trụ sở chính: 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Thành phố Hồ Chí Minh <br> Bookstore nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống trên
-                          toàn quốc
-                      </p>
-                  </div>
-              </div>
-          </div>
-      </footer>
-  </div>
+
+                <ul class="header-exten menu navbar-nav navbar-expand-sm">
+                    <li class="cart nav-item">
+                        <a href="giohang.html" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="account nav-item">
+                        <a href="" class="nav-link"><i class="fas fa-user"></i></a>
+                        <ul class="submenu bg-white">
+                            <li class="">
+                                <a href="../html/dangnhap.html" class="nav-link">
+                                    <input type="button" value="Đăng nhập" class="btn btn-primary btn-block">
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../html/dangky.html" class="nav-link">
+                                    <input type="button" value="Đăng ký" class="btn bg-light btn-block btnDK">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="notify nav-item">
+                        <a href="" class="nav-link"><i class="fas fa-bell"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <nav>
+            <div class="container justify-content-center menu ">
+                <ul class="nav menu-category">
+                    <li class="nav-item nav-i"><a href="./giothieutv.html" class="nav-link nav-menu">Giới Thiệu</a></li>
+                    <li class="nav-item nav-i"><a href="#" class="nav-link nav-menu">Sách Giáo Khoa</a></li>
+                    <li class="nav-item nav-i"><a href="#" class="nav-link nav-menu">Sách Tham Khảo</a></li>
+                    <li class="nav-item nav-i"><a href="#" class="nav-link nav-menu">Sách Ngoại Ngữ</a></li>
+                    <li class="nav-item nav-i"><a href="#" class="nav-link nav-menu">Truyện tranh</a></li>
+                    <li class="nav-item nav-i"><a href="#" class="nav-link nav-menu">Tiểu Thuyết</a></li>
+                    <li class="nav-item nav-i"><a href="#" class="nav-link nav-menu">Từ điển</a></li>
+                    <li class="nav-item nav-i"><a href="#" class="nav-link nav-menu">Sách Kinh Tế</a></li>
+                    <li class="nav-item nav-i"><a href="#" class="nav-link nav-menu">Sách Thiếu Nhi</a></li>
+                    <li class="nav-item nav-i"><a href="#" class="nav-link nav-menu">Đời sống</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="container bg-white mt-3">
+                <form action="" class="form">
+                    <h3 class="title">ĐĂNG KÝ</h3>
+                    <div class="from-group" style="margin-bottom:20px ;">
+                        <label for="" class="label">Số điện thoại</label>
+                        <div class="input-group">
+                            <input type="text" name="txtSDT" id="txtSDT" class="form-control" placeholder="Nhập số điện thoại" required>
+                            <div class="input-group-append">
+                                <button class="btn input-group-text text-primary bg-white " style="border-left: none;">Gửi mã OTP</button>
+                            </div>
+
+                        </div>
+                        <span class="text-danger" id="tbSDT"></span>
+                    </div>
+                    <div class="from-group" style="margin-bottom:20px ;">
+                        <label for="" class="label">Mã xác nhận OTP</label>
+                        <input type="text" name="txtOTP" id="txtOTP" class="form-control" placeholder="6 ký tự" required>
+                        <span class="text-danger" id="tbOTP"></span>
+                    </div>
+                    <div class="from-group" style="margin-bottom:20px ;">
+                        <label for="" class="label">Mật khẩu</label>
+                        <input type="text" name="txtMK" id="txtPass" class="form-control" placeholder="Nhập mật khẩu" required>
+                        <span class="text-danger" id="tbMK"></span>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary btn-block" id="txtDN" disabled>Đăng Ký</button>
+                        <button type="button" class="btn btn-block">Bỏ qua</button>
+
+                    </div>
+                    <div style="text-align:center ; padding-bottom: 20px;" class="label">
+                        Bằng việc đăng ký, bạn đã đồng ý với Fahasa.com về
+                        <a href="">Điều khoản dịch vụ</a> & <a href="">Chính sách bảo mật</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-3 ft-block">
+                        <h4 class="ft-title">DỊCH VỤ</h4>
+                        <ul class="nav flex-column">
+                            <li class="ft-item">
+                                <a href="" class="ft-link">Giới thiệu Nhà Sách</a>
+                            </li>
+                            <li class="ft-item">
+                                <a href="" class="ft-link">Điều khoản sử dụng</a>
+                            </li>
+                            <li class="nav-if">
+                                <a href="" class="ft-link">Chính sách bảo mật</a>
+                            </li>
+                            <li class="ft-item">
+                                <a href="" class="ft-link">Chính sách bán hàng</a>
+                            </li>
+                            <li class="ft-item">
+                                <a href="" class="ft-link">Phương thức vận chuyển</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-3 ft-block">
+                        <h4 class="ft-title">TÀI KHOẢN</h4>
+                        <ul class="nav flex-column">
+                            <li class="ft-item">
+                                <a href="" class="ft-link">Đăng nhập</a>
+                            </li>
+                            <li class="ft-item">
+                                <a href="" class="ft-link">Tạo tài khoản</a>
+                            </li>
+                            <li class="ft-item">
+                                <a href="" class="ft-link">Lịch sử mua hàng</a>
+                            </li>
+                            <li class="ft-item">
+                                <a href="" class="ft-link">Chi tiết tài khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-3 ft-block">
+                        <h4 class="ft-title">HỖ TRỢ</h4>
+                        <ul class="nav flex-column">
+                            <li class="ft-item">
+                                <a href="" class="ft-link">Chính sách đổi trả</a>
+                            </li>
+                            <li class="ft-item">
+                                <a href="" class="ft-link">Chính sách bảo hành</a>
+                            </li>
+                            <li class="ft-item">
+                                <a href="" class="ft-link">Chính sách giao hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-3 ft-block">
+                        <h4 class="ft-title">LIÊN HỆ</h4>
+                        <p>Hotline: <a href="tel: 1900 1060" class="ft-link">1900 1060</a></p>
+                        <p>Email: <a href="mailto: hotro@bookstore.com" class="ft-link">hotro@bookstore.com</a></p>
+                    </div>
+                </div>
+                <div class="row ft-block">
+                    <div class="col-12">
+                        <h4 class="ft-final-title">BOOKSTORE</h4>
+                        <p class="ft-final-content">Trụ sở chính: 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Thành phố Hồ Chí Minh <br> Bookstore nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống trên
+                            toàn quốc
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>

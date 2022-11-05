@@ -1,0 +1,13 @@
+.order-title {
+    padding-left: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.product-list {
+    list-style: none;
+}
+
+.product-item-order {
+    border-bottom: 1px solid gray;
+    margin: 0;
+}

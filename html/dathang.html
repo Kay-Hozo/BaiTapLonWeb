@@ -14,6 +14,7 @@
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/dathang.css">
 </head>
 
 <body>
@@ -45,13 +46,50 @@
                             </li>
                             <li class="">
                                 <a href="../html/dangky.html" class="nav-link">
-                                    <input type="button" value="Đăng ký" class="btn bg-light btn-block btnDK">
+                                    <input type="button" value="Đăng ký" class="btn border-dark bg-light btn-block btnDK">
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="notify nav-item">
-                        <a href="" class="nav-link"><i class="fas fa-bell"></i></a>
+                        <a href="" class="nav-link">
+                            <i class="fas fa-bell"></i>
+                            <span class="has-notify"></span>
+                        </a>
+                        <div class="notify-box">
+                            <h6 class="notify-heading">Thông báo</h6>
+                            <ul class="notify-list nav">
+                                <li class="notify-item readed nav-item">
+                                    <a href="#" class="notify-link row">
+                                        <span class="notify-img col-md-2 d-flex align-items-center justify-content-end">
+                                            <i class="fas fa-bell"></i>
+                                        </span>
+                                        <div class="notify-content col-md-10">
+                                            <p class="notify-title text-left">Thông báo test</p>
+                                            <p class="notify-detail text-left">Nội dung thông báo đây nà Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nihil quae dolor architecto distinctio itaque corporis ad iusto dolores. Sequi laudantium nemo debitis deserunt
+                                                distinctio eaque blanditiis error sint minus.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notify-item nav-item">
+                                    <a href="#" class="notify-link row">
+                                        <span class="notify-img col-md-2 d-flex align-items-center justify-content-end">
+                                            <i class="fas fa-bell"></i>
+                                        </span>
+                                        <div class="notify-content col-md-10">
+                                            <p class="notify-title text-left">Thông báo test</p>
+                                            <p class="notify-detail text-left">Nội dung thông báo đây nà Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nihil quae dolor architecto distinctio itaque corporis ad iusto dolores. Sequi laudantium nemo debitis deserunt
+                                                distinctio eaque blanditiis error sint minus.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="notify-footer">
+                                <a href="#">Xem thêm</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -73,11 +111,14 @@
             </div>
         </nav>
         <div class="content">
-            <div class="container bg-white mt-3">
-                <div class="row">
-                <h3 style="padding-top: 10px; padding-left: 10px; border-bottom: 1px solid gray;" class="bg-light col-12">ĐỊA CHỈ GIAO HÀNG</h3>
-            </div>
-                <div style="padding-top: 20px;">
+            <div class="container mt-3 bg-white rounded p-3">
+                <div class="order-title">
+                    <h3>
+                        ĐỊA CHỈ GIAO HÀNG
+                    </h3>
+                </div>
+
+                <div style="padding-left: 10px; padding-top: 20px;">
                     <form class="form">
                         <div class="row">
                             <div class="col-6 col-sm-5">
@@ -166,7 +207,7 @@
            </datalist>
                             </div>
                         </div>
-                        <div class="row mt-3" style="padding-bottom: 15px;">
+                        <div class="row mt-3 mb-3">
                             <div class="col-6 col-sm-5">
                                 <label for="" class="label">Địa chỉ nhận hàng</label><br>
                                 <span class="text-danger" id="tbDC"></span>
@@ -178,19 +219,19 @@
                     </form>
                 </div>
             </div>
-            <div class="container mt-3 bg-white">
-                <div class=" row bg-light" style="padding-left: 10px;padding-top: 10px; border-bottom: 1px solid gray;">
-                    <h3 class="col-12">PHƯƠNG THỨC VẬN CHUYỂN</h3>
+            <div class="container mt-3 bg-white rounded p-3">
+                <div class="order-title">
+                    <h3>PHƯƠNG THỨC VẬN CHUYỂN</h3>
                 </div>
-                <div class=" mt-3" style="padding-left: 10px; padding-bottom: 10px;">
+                <div class="mt-3 mb-3" style="padding-left: 10px;">
                     <p class="label">Quý khách vui lòng điền tên và địa chỉ giao nhận trước.</p>
                 </div>
             </div>
-            <div class="container mt-3 bg-white">
-                <div class="bg-light row" style="padding-left: 10px; padding-top: 10px; border-bottom: 1px solid gray;">
-                    <h3 class="col-12">PHƯƠNG THỨC THANH TOÁN</h3>
+            <div class="container mt-3 bg-white rounded p-3">
+                <div class="order-title">
+                    <h3>PHƯƠNG THỨC THANH TOÁN</h3>
                 </div>
-                <div class=" mt-3 ml-5 " style="padding-bottom: 10px;">
+                <div class=" mt-3 ml-5 ">
                     <div class="row mb-3 col-12 label">
                         <input type="radio" name="txtZalo" id="txtZalo" style="margin-right: 25px;">Thanh toán bằng ví Zalopay
                     </div>
@@ -211,8 +252,8 @@
                     </div>
                 </div>
             </div>
-            <div class="container mt-3 bg-white">
-                <div class=" row bg-light" style="padding-top: 10px; padding-left: 10px;">
+            <div class="container mt-3 bg-white rounded p-3">
+                <div class="bg-light" style="padding-top: 10px; padding-left: 10px; border: 1px solid black;">
                     <a href="#" style="text-decoration: none;">
                         <div class="row">
                             <h3 class="col-md-12">CHỌN MÃ KHUYẾN MÃI</h3>
@@ -221,23 +262,33 @@
                 </div>
 
             </div>
-            <div class="container mt-3 bg-white">
-                <div class="row bg-light mb-3" style="padding-left:10px; padding-top: 10px;border-bottom: 1px solid gray;">
-                    <h3 class="col-12">KIỂM TRA LẠI ĐƠN HÀNG</h3>
+            <div class="container mt-3 bg-white rounded p-3">
+                <div class="order-title">
+                    <h3>KIỂM TRA LẠI ĐƠN HÀNG</h3>
 
                 </div>
-                <div style=" border-bottom: 1px solid gray;" class="mb-3">
-                    <img class="img-thumbnail " src="../img/books/image1.jpg" alt="" align="left" width="80px" height="80px" style="margin-right:20px ; margin-left: 20px;">
-                    <p>Người Giàu Có Nhất Thành Babylon</p>
-                    <p class="text-danger">99.000</p>
-                    <p>Số lượng : 1 </p>
-                </div>
-                <div style=" border-bottom: 1px solid gray; padding-bottom: 20px; ">
-                    <img class="img-thumbnail " src="../img/books/image2.jpg" alt="" align="left" width="80px" height="80px" style="margin-right:20px ; margin-left: 20px;">
-                    <p>Doramon</p>
-                    <p class="text-danger">65.000</p>
-                    <p>Số lượng : 1 </p>
-                </div>
+                <ul class="product-list">
+                    <li class="product-item-order p-3 row">
+                        <div class="product-img col-md-1">
+                            <img class="img-thumbnail w-100" src="../img/books/image1.jpg" alt="">
+                        </div>
+                        <div class="info-product col-md-11">
+                            <h6>Người Giàu Có Nhất Thành Babylon</h6>
+                            <h6 class="text-danger">99.000</h6>
+                            <h6>Số lượng : 1 </h6>
+                        </div>
+                    </li>
+                    <li class="product-item-order p-3 row">
+                        <div class="product-img col-md-1">
+                            <img class="img-thumbnail w-100" src="../img/books/image2.jpg" alt="">
+                        </div>
+                        <div class="info-product col-md-11">
+                            <h6>Doraemon</h6>
+                            <h6 class="text-danger">65.000</h6>
+                            <h6>Số lượng : 1 </h6>
+                        </div>
+                    </li>
+                </ul>
                 <div style="padding-top: 10px; padding-bottom: 20px;">
                     <div class="row">
                         <h5 class="col-11">Thành tiền</h5>
@@ -245,15 +296,15 @@
                     </div>
                 </div>
             </div>
-            <div class="container mt-3 bg-light">
+            <div class="container mt-3 bg-white rounded p-3">
                 <div style="padding-top:10px ; padding-bottom: 20px;">
                     <div class="row">
                         <h5 class="col-11" style="font-weight:bold ;">Tổng Số Tiền (Gồm VAT)</h5>
                         <h5 class="col-1 text-danger" style="font-weight:bold ;">164.000</h5>
                     </div>
                 </div>
-                <div class="row">
-                    <button type="button" class=" btn btn-primary btn-block mb-3" style="margin-left:5px ; margin-right: 5px; font-weight: bold; font-size: 20px;">Xác nhận đặt hàng</button>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary btn-block mb-3" style="margin-right: 5px;font-weight: bold; font-size: 20px; width: 200px;">Xác nhận đặt hàng</button>
                 </div>
 
             </div>

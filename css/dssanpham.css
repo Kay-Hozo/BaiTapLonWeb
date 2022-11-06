@@ -1,0 +1,27 @@
+.prd-category-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.prd-sort {
+    font-size: 1rem;
+}
+
+.category-link {
+    font-size: 0.8rem;
+}
+
+.category-link:hover {
+    background-color: transparent;
+}
+
+.category-link.checked {
+    font-weight: bold;
+    color: var(--primary-blue-color);
+}
+
+.pagination {
+    margin-bottom: 0;
+    color: var(--primary-blue-color);
+    font-size: 1.2rem;
+}

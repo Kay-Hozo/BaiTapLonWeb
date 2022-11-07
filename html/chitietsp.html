@@ -66,10 +66,10 @@
                                         </span>
                                         <div class="notify-content col-md-10">
                                             <p class="notify-title text-left text-danger">BOM TẤN KHUYẾN MÃI!!!</p>
-                                            <p class="notify-detail text-left"> 
+                                            <p class="notify-detail text-left">
                                                 <img src="../img/thongbao/khuyenmai.png" alt="" width="50" height="70" style="margin-right: 15px;" class="float-left img-thumbnail">
-                                                <b> Mừng khách hàng mới giảm ngay 50% trên sản phẩm</b> 
-                                               
+                                                <b> Mừng khách hàng mới giảm ngay 50% trên sản phẩm</b>
+
                                             </p>
                                         </div>
                                     </a>
@@ -82,11 +82,11 @@
                                         <div class="notify-content col-md-10">
                                             <p class="notify-title text-left text-danger">"KÈO THƠM"!VOUCHER 100K LÊN SÀN</p>
                                             <p class="notify-detail text-left">
-                                               <img src="../img/thongbao/khuyenmai2.png" alt="" width="50" height="70" style="margin-right: 15px;" class="float-left img-thumbnail">
+                                                <img src="../img/thongbao/khuyenmai2.png" alt="" width="50" height="70" style="margin-right: 15px;" class="float-left img-thumbnail">
                                                 <b>
                                                    
                                                     Sales sập sàn giảm ngay 100K cho đơn hàng 500K
-                                                </b> 
+                                                </b>
                                             </p>
                                         </div>
                                     </a>
@@ -117,46 +117,305 @@
             </div>
         </nav>
         <div class="content">
-            <div class="container bg-white rounded p-4">
-                <div class="product-detail row">
-                    <div class="col-sm-4 col-lg-4">
-                        <div class="prd-img border border-dark">
-                            <img src="./../img/books/image1.jpg" class="w-100" alt="Product image">
+            <div class="container">
+                <div class="product-detail rounded p-4 bg-white">
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-4">
+                            <div class="prd-img border border-dark">
+                                <img src="./../img/books/image1.jpg" class="w-100" alt="Product image">
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-lg-8">
+                            <div class="prd-info">
+                                <h3 class="font-weight-bold">
+                                    Người Giàu Có Nhất Thành Babylon
+                                </h3>
+                                <p class="h4 prd-author mt-3">Tác giả: George S Clason</p>
+                                <ul class="prd-rating mt-3">
+                                    <li class="fa fa-star text-warning"></li>
+                                    <li class="fa fa-star text-warning"></li>
+                                    <li class="fa fa-star text-warning"></li>
+                                    <li class="fa fa-star text-warning"></li>
+                                    <li class="fa fa-star text-warning"></li>
+                                </ul>
+                                <p class="h3 prd-price font-weight-bold">99.000</p>
+                                <div class="prd-quantity mt-3 d-flex justify-content-start align-items-center">
+                                    <button type="button" class="border border-dark input-quantity-btn quantity-left-minus btn btn-light" data-type="minus">
+                                            <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input type="text" id="txtQuantity" name="quantity" class="form-control input-number" value="1" data-max="20">
+                                    <button type="button" class="border border-dark quantity-right-plus btn input-quantity-btn" data-type="plus">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                    <p class="ml-3 h6 prd-quantity-left">Có sẵn 20 bản</p>
+                                </div>
+                                <p id="notify-quantity" class="mt-3 h6 text-danger"> </p>
+                                <div class="prd-btn mt-3">
+                                    <a href="#" class="btn prd-btn-input mr-4">
+                                        Thêm vào giỏ hàng
+                                    </a>
+                                    <a href="./giohang.html" class="btn prd-btn-input">
+                                        Mua ngay
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-8 col-lg-8">
-                        <div class="prd-info">
-                            <h3 class="font-weight-bold">
-                                Người Giàu Có Nhất Thành Babylon
-                            </h3>
-                            <p class="h4 prd-author mt-3">Tác giả: George S Clason</p>
-                            <ul class="prd-rating mt-3">
-                                <li class="fa fa-star text-warning"></li>
-                                <li class="fa fa-star text-warning"></li>
-                                <li class="fa fa-star text-warning"></li>
-                                <li class="fa fa-star text-dark"></li>
-                                <li class="fa fa-star text-dark"></li>
+                </div>
+                <div class="bg-white rounded p-4 mt-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="nav nav-tabs tab-heading">
+                                <li>
+                                    <a href="#prd-description" data-toggle="tab" class="tab-title active">
+                                        Chi tiết sản phẩm
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#prd-review" data-toggle="tab" class="tab-title">Đánh giá</a>
+                                </li>
                             </ul>
-                            <p class="h3 prd-price font-weight-bold">99.000</p>
-                            <div class="prd-quantity mt-3 d-flex justify-content-start align-items-center">
-                                <button type="button" class="border border-dark input-quantity-btn quantity-left-minus btn btn-light" data-type="minus">
-                                        <i class="fas fa-minus"></i>
-                                </button>
-                                <input type="text" id="txtQuantity" name="quantity" class="form-control input-number" value="1" data-max="20">
-                                <button type="button" class="border border-dark quantity-right-plus btn input-quantity-btn" data-type="plus">
-                                    <i class="fas fa-plus"></i>
-                                </button>
-                                <p class="ml-3 h6 prd-quantity-left">Có sẵn 20 bản</p>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="prd-description">
+                                    <div class="prd-info pt-3">
+                                        <h6 class="font-weight-bold mb-3">Thông tin sản phẩm</h6>
+                                        <table class="prd-info-list w-100">
+                                            <tr>
+                                                <td class="prd-info-title">Mã sản phẩm</td>
+                                                <td class="prd-info-content">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="prd-info-title">Tác giả</td>
+                                                <td class="prd-info-content">George S Clason</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="prd-info-title">Nhà xuất bản</td>
+                                                <td class="prd-info-content">NXB Tổng Hợp TPHCM</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="prd-info-title">Năm xuất bản</td>
+                                                <td class="prd-info-content">2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="prd-info-title">Kích Thước Bao Bì</td>
+                                                <td class="prd-info-content">20.5 x 13 x 1 cm</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="prd-info-title">Số trang</td>
+                                                <td class="prd-info-content">214</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="prd-info-title">Hình thức</td>
+                                                <td class="prd-info-content">Bìa Mềm</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <p class="prd-intro border-top pt-3 mt-3">
+                                        <b>NGƯỜI GIÀU CÓ NHẤT THÀNH BABYLON</b><br>Người giàu có nhất thành Babylon (tiếng Anh: The Richest Man in Babylon) được xem là một trong những tác phẩm truyền cảm hứng lớn nhất về chủ đề tiết kiệm, kế hoạch tài
+                                        chính và sự giàu có cá nhân. Tác phẩm được viết bởi doanh nhân, nhà văn Mỹ George Samuel Clason vào năm 1926, kể về cách tiết kiệm, buôn bán và làm giàu của người dân ở thành Babylon cổ xưa. <br>Ban đầu đây chỉ
+                                        là một tập sách nhỏ, viết về các cách quản lý tài chính và do các ngân hàng và công ty bảo hiểm phân phối. Sau khi được tổng hợp, biên tập thành một cuốn sách trọn vẹn, “Người giàu có nhất thành Babylon” bất ngờ
+                                        trở nên phổ biến và nổi tiếng trên toàn thế giới bởi những lời khuyên về quản lý tài chính hết sức khôn ngoan. <br>Cuốn sách tập hợp nhiều câu chuyện cổ về các nhân vật vươn lên từ nghèo khổ để trở nên giàu có,
+                                        được kính trọng bậc nhất thành Babylon. Có thể kể đến câu chuyện của “người giàu có nhất thành Babylon” Arkad – một thợ khắc gỗ khi còn trẻ, hay người cho vay vàng Mathon, những người nô lệ như Dabasir, Megiddo,
+                                        Sharru Nada,…
+                                        <br>Các bí quyết tài chính quan trọng nhất được cuốn sách tiết lộ bao gồm: 7 cách để chữa trị một túi tiền xẹp lép, 5 quy luật của vàng, công thức tích lũy theo tỷ lệ 1/10. Ngoài ra, cuốn sách còn đưa ra nhiều lời
+                                        khuyên hữu ích về cách kiểm soát những khoản chi tiêu, làm cho vàng sinh lợi, gìn giữ tài sản, đảm bảo nguồn thu nhập lâu dài,…
+                                    </p>
+                                </div>
+                                <div class="tab-pane" id="prd-review">
+                                    <h6 class="font-weight-bold mt-3">Đánh giá</h6>
+                                    <div class="rating">
+                                        <div class="ave-rating d-flex align-items-center">
+                                            <p class="h2 ave-rating-result font-weight-bold">5.00</p>
+                                            <div class="ml-3">
+                                                <ul class="h5">
+                                                    <li class="fa fa-star text-warning"></li>
+                                                    <li class="fa fa-star text-warning"></li>
+                                                    <li class="fa fa-star text-warning"></li>
+                                                    <li class="fa fa-star text-warning"></li>
+                                                    <li class="fa fa-star text-warning"></li>
+                                                </ul>
+                                                <p class="h6 rating-total text-muted">
+                                                    (1 đánh giá)
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="rating-percent-box">
+                                            <div class="rating-level d-flex align-items-center">
+                                                <p class="rating-level-title">5 sao</p>
+                                                <span class="rating-level-progress">
+                                                    <p class="rating-percent rate-100"></p>
+                                                </span>
+                                                <span class="rating-num text-muted">(1)</span>
+                                            </div>
+                                            <div class="rating-level d-flex align-items-center">
+                                                <p class="rating-level-title">4 sao</p>
+                                                <span class="rating-level-progress">
+                                                    <p class="rating-percent"></p>
+                                                </span>
+                                                <span class="rating-num text-muted"></span>
+                                            </div>
+                                            <div class="rating-level d-flex align-items-center">
+                                                <p class="rating-level-title">3 sao</p>
+                                                <span class="rating-level-progress ">
+                                                    <p class="rating-percent"></p>
+                                                </span>
+                                                <span class="rating-num text-muted"></span>
+                                            </div>
+                                            <div class="rating-level d-flex align-items-center">
+                                                <p class="rating-level-title">2 sao</p>
+                                                <span class="rating-level-progress ">
+                                                    <p class="rating-percent"></p>
+                                                </span>
+                                                <span class="rating-num text-muted"></span>
+                                            </div>
+                                            <div class="rating-level d-flex align-items-center">
+                                                <p class="rating-level-title">1 sao</p>
+                                                <span class="rating-level-progress ">
+                                                    <p class="rating-percent"></p>
+                                                </span>
+                                                <span class="rating-num text-muted"></span>
+                                            </div>
+                                        </div>
+                                        <ul class="comment-list navbar-nav">
+                                            <li class="row user-review mt-3 pt-3">
+                                                <div class="col-md-2 user-info">
+                                                    <p class="user-name">
+                                                        Bùi Thị Thùy Trang
+                                                    </p>
+                                                    <p class="rating-time text-muted">20/10/2022</p>
+                                                </div>
+                                                <div class="col-md-10 detail-review">
+                                                    <ul class="user-rating">
+                                                        <li class="fa fa-star text-warning"></li>
+                                                        <li class="fa fa-star text-warning"></li>
+                                                        <li class="fa fa-star text-warning"></li>
+                                                        <li class="fa fa-star text-warning"></li>
+                                                        <li class="fa fa-star text-warning"></li>
+                                                    </ul>
+                                                    <p class="review-content">
+                                                        Đóng gói kỹ, giấy đẹp. Cuốn sách của mình còn nguyên seal, rất đẹp và mới. <br> Nội dung sách thì không phải bàn rồi, mình đọc online rồi và giờ mua sách ủng hộ và đọc lại. Người giàu có nhất thành
+                                                        Babylon và Thịnh vượng tài chính tuổi 30 là 2 cuốn sách về tài chính cá nhân mình tâm đắc cho đến hiện tại. Vẫn đang tìm hiểu thêm những cuốn sách khác
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <p id="notify-quantity" class="mt-3 h6 text-danger"> </p>
-                            <div class="prd-btn mt-3">
-                                <a href="#" class="btn prd-btn-input mr-4">
-                                    Thêm vào giỏ hàng
-                                </a>
-                                <a href="./giohang.html" class="btn prd-btn-input">
-                                    Mua ngay
-                                </a>
-                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded mt-3 p-4 bg-white">
+                    <h5 class="font-weight-bold mt-3">Sản phẩm tương tự</h5>
+                    <div class="product-slide row">
+                        <div class="product-box col-3 col-lg-md-4 col-sm-3 col-lg-2">
+                            <a href="./chitietsp.html" class="product-link">
+                                <div class="card w-100 product-item">
+                                    <img class="card-img-top" src="./../img/books/image1.jpg" alt="Product image">
+                                    <div class="card-body">
+                                        <p class="product-title">Người Giàu Có Nhất Thành Babylon</p>
+                                        <p class="card-subtitle text-danger product-price">99.000 đ</p>
+                                        <ul class="rating">
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-box col-3 col-lg-md-4 col-sm-3 col-lg-2">
+                            <a href="./chitietsp.html" class="product-link">
+                                <div class="card w-100 product-item">
+                                    <img class="card-img-top" src="./../img/books/image1.jpg" alt="Product image">
+                                    <div class="card-body">
+                                        <p class="product-title">Người Giàu Có Nhất Thành Babylon</p>
+                                        <p class="card-subtitle text-danger product-price">99.000 đ</p>
+                                        <ul class="rating">
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-box col-3 col-lg-md-4 col-sm-3 col-lg-2">
+                            <a href="./chitietsp.html" class="product-link">
+                                <div class="card w-100 product-item">
+                                    <img class="card-img-top" src="./../img/books/image1.jpg" alt="Product image">
+                                    <div class="card-body">
+                                        <p class="product-title">Người Giàu Có Nhất Thành Babylon</p>
+                                        <p class="card-subtitle text-danger product-price">99.000 đ</p>
+                                        <ul class="rating">
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-box col-3 col-lg-md-4 col-sm-3 col-lg-2">
+                            <a href="./chitietsp.html" class="product-link">
+                                <div class="card w-100 product-item">
+                                    <img class="card-img-top" src="./../img/books/image1.jpg" alt="Product image">
+                                    <div class="card-body">
+                                        <p class="product-title">Người Giàu Có Nhất Thành Babylon</p>
+                                        <p class="card-subtitle text-danger product-price">99.000 đ</p>
+                                        <ul class="rating">
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-box col-3 col-lg-md-4 col-sm-3 col-lg-2">
+                            <a href="./chitietsp.html" class="product-link">
+                                <div class="card w-100 product-item">
+                                    <img class="card-img-top" src="./../img/books/image1.jpg" alt="Product image">
+                                    <div class="card-body">
+                                        <p class="product-title">Người Giàu Có Nhất Thành Babylon</p>
+                                        <p class="card-subtitle text-danger product-price">99.000 đ</p>
+                                        <ul class="rating">
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-box col-3 col-lg-md-4 col-sm-3 col-lg-2">
+                            <a href="./chitietsp.html" class="product-link">
+                                <div class="card w-100 product-item">
+                                    <img class="card-img-top" src="./../img/books/image1.jpg" alt="Product image">
+                                    <div class="card-body">
+                                        <p class="product-title">Người Giàu Có Nhất Thành Babylon</p>
+                                        <p class="card-subtitle text-danger product-price">99.000 đ</p>
+                                        <ul class="rating">
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                            <li class="fa fa-star text-warning"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

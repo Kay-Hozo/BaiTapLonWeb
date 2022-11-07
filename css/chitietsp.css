@@ -56,3 +56,136 @@
     background-color: rgba(30, 170, 206, 0.8);
     color: var(--white-color);
 }
+
+.tab-heading li {
+    min-height: var(--tab-heading-height);
+}
+
+.tab-title {
+    color: var(--primary-black-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 12px;
+    line-height: var(--tab-heading-height);
+    display: inline-block;
+}
+
+.tab-title.active {
+    border-bottom: 1px solid var(--primary-blue-color);
+}
+
+.tab-title:hover {
+    background-color: var(--primary-grey-color);
+    color: var(--primary-black-color);
+    text-decoration: none;
+}
+
+
+/* Product intro */
+
+.prd-intro {
+    font-size: 1rem;
+    line-height: 28px;
+    border-top: 1px solid var(--primary-grey-color);
+}
+
+.prd-info-list {
+    font-size: 0.9rem;
+}
+
+.prd-info-list tr:nth-child(2n) .prd-info-content {
+    background-color: rgba(238, 238, 238, 0.5);
+}
+
+.prd-info-title,
+.prd-info-content {
+    padding: 6px 6px 6px 20px;
+}
+
+.prd-info-title {
+    width: 20%;
+}
+
+.prd-info-title {
+    background-color: var(--primary-grey-color);
+    font-weight: 500;
+}
+
+
+/* Rating */
+
+.rating-percent-box {
+    max-width: 400px;
+}
+
+.rating-level-title {
+    flex: 1;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+.rating-level-progress {
+    background-color: var(--primary-grey-color);
+    height: 8px;
+    flex: 5;
+}
+
+.rating-percent {
+    width: 0;
+    height: 100%;
+    background-color: #f6a500;
+    margin-bottom: 0;
+}
+
+.rate-100 {
+    width: 100%;
+}
+
+.rating-num {
+    flex: 1;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.user-review {
+    border-top: 1px solid var(--primary-grey-color);
+}
+
+.user-name,
+.rating-time {
+    margin-bottom: 0;
+}
+
+.user-name {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.rating-time {
+    font-size: 0.6rem;
+}
+
+.review-content {
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+
+/*  */
+
+.product-slide .product-title,
+.product-slide .product-price {
+    font-size: 0.8rem;
+}
+
+.product-slide .product-title {
+    margin-bottom: 8px;
+    --line-height: 0.8rem;
+    font-size: 0.7rem;
+    line-height: var(--line-height);
+    height: calc(var(--line-height)*2);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}

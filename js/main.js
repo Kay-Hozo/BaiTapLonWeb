@@ -1,3 +1,4 @@
+
 $(document).ready(function()
 {
   var txtSDT=$("#txtSDT");
@@ -115,5 +116,71 @@ $(document).ready(function()
       tbDC.html("");
       return true;
   }txtDC.blur(KiemTraDC);
+
+   // Thay đổi số lượng sp trang chi tiết sản phẩm
+   var quantity = 1
+   var tbQuantity = $('#notify-quantity')
+   var maxQuantity = $('#txtQuantity').data('max')
+
+   $('.quantity-right-plus').click(function(e) {
+       e.preventDefault();
+       quantity = parseInt($('#txtQuantity').val());
+       if (quantity < maxQuantity) {
+           $('#txtQuantity').val(quantity + 1);
+       } else {
+           tbQuantity.html('Số lượng bạn chọn đã đạt mức tối đa của sản phẩm này')
+       }
+   });
+
+   $('.quantity-left-minus').click(function(e) {
+       e.preventDefault();
+       quantity = parseInt($('#txtQuantity').val());
+
+       if (quantity > 1) {
+           $('#txtQuantity').val(quantity - 1);
+       }
+   });
+
+   $('#txtQuantity').change(ctrlQuantity)
+
+   function ctrlQuantity(e) {
+       quantity = parseInt($('#txtQuantity').val());
+       if (quantity > maxQuantity) {
+           $('#txtQuantity').val(maxQuantity);
+           tbQuantity.html('Số lượng bạn chọn đã đạt mức tối đa của sản phẩm này');
+       } else {
+           tbQuantity.html(' ');
+       }
+   }
+   // giỏ hàng
+   var i=1;
+   var txtSL=$("#txtSL");
+   var txtDG=$("#txtDG");
+   var txtTong=$("#txtTong");
+   var dongia=0;
+   var tong=0;
+   var btngiam=$("#btngiam");
+   var btntang=$("#btntang");
+   btngiam.click(function()
+   {
+       i= parseInt(txtSL.val());
+       dongia=parseFloat(txtDG.val());
+       tong=parseFloat(txtTong.val());
+       if(i>=1)
+       {
+           txtSL.val(i-1);
+           txtTong.val((tong-dongia)+".000");
+       }
+      
+   });
+   btntang.click(function()
+   {
+       i=parseInt(txtSL.val());
+       dongia=parseFloat(txtDG.val());
+       tong=parseFloat(txtTong.val());
+       txtSL.val(i+1);
+       txtTong.val((tong+dongia)+".000");
+   });
   
 });
+

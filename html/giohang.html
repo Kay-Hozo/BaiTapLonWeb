@@ -14,6 +14,8 @@
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="../css/chitietsp.css">
+    <script src="../js/main.js"></script>
 </head>
 
 <body>
@@ -64,9 +66,11 @@
                                             <i class="fas fa-bell"></i>
                                         </span>
                                         <div class="notify-content col-md-10">
-                                            <p class="notify-title text-left">Thông báo test</p>
-                                            <p class="notify-detail text-left">Nội dung thông báo đây nà Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nihil quae dolor architecto distinctio itaque corporis ad iusto dolores. Sequi laudantium nemo debitis deserunt
-                                                distinctio eaque blanditiis error sint minus.
+                                            <p class="notify-title text-left text-danger">BOM TẤN KHUYẾN MÃI!!!</p>
+                                            <p class="notify-detail text-left"> 
+                                                <img src="../img/thongbao/khuyenmai.png" alt="" width="50" height="70" style="margin-right: 15px;" class="float-left img-thumbnail">
+                                                <b> Mừng khách hàng mới giảm ngay 50% trên sản phẩm</b> 
+                                               
                                             </p>
                                         </div>
                                     </a>
@@ -77,9 +81,13 @@
                                             <i class="fas fa-bell"></i>
                                         </span>
                                         <div class="notify-content col-md-10">
-                                            <p class="notify-title text-left">Thông báo test</p>
-                                            <p class="notify-detail text-left">Nội dung thông báo đây nà Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nihil quae dolor architecto distinctio itaque corporis ad iusto dolores. Sequi laudantium nemo debitis deserunt
-                                                distinctio eaque blanditiis error sint minus.
+                                            <p class="notify-title text-left text-danger">"KÈO THƠM"!VOUCHER 100K LÊN SÀN</p>
+                                            <p class="notify-detail text-left">
+                                               <img src="../img/thongbao/khuyenmai2.png" alt="" width="50" height="70" style="margin-right: 15px;" class="float-left img-thumbnail">
+                                                <b>
+                                                   
+                                                    Sales sập sàn giảm ngay 100K cho đơn hàng 500K
+                                                </b> 
                                             </p>
                                         </div>
                                     </a>
@@ -116,77 +124,105 @@
                     <table class="table">
                         <thead class="thead-light">
                             <tr>
-                                <th class="col-sm-7 label">Sản phẩm</th>
-                                <th class="col-sm-2 label">Số lượng</th>
-                                <th class="col-sm-3 label">Thành tiền</th>
+                                <th class="col-sm-6 label">Sản phẩm</th>
+                                <th class="col-sm-3 label">Số lượng</th>
+                                <th class="col-sm-2 label">Thành tiền</th>
+                                <th class="col-sm-1 label">Thao tác</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>
                                     <div style="text-align: left;">
-                                        <input type="checkbox" name="txtSP" id="txtSP">
+                                        <input type="checkbox" name="txtSP" id="txtSP" checked>
                                     </div>
                                     <img class="img-thumbnail img-SP " src="../img/books/image1.jpg" alt="" align="left">
                                     <p class="label" style="margin-top:35px ;">Người Giàu Có Nhất Thành Babylon</p>
                                     <br>
-                                    <p id="txtDG" class="label">99.000</p>
+                                    <input type="text" name="txtDG" id="txtDG" value="99.000" class="label" style="border: none ;">
                                 </td>
                                 <td>
-
-
-                                    <button type="button " class="btn-light btn-SP" id="btnCong">+</button>
-                                    <span id="txtSL">1</span>
-                                    <button type="button " class="btn-light btn-SP" id="btnTru">-</button>
+                                    <div class="prd-quantity mt-3 d-flex justify-content-start align-items-center" style="padding-top:60px ;" >
+                                        <button type="button" id="btngiam" class="border border-dark input-quantity-btn quantity-left-minus btn btn-light" data-type="minus">
+                                                <i class="fas fa-minus"></i>
+                                        </button>
+                                        <input type="text" id="txtSL" name="soluong" class="form-control input-number" value="1" data-max="20">
+                                        <button type="button" id="btntang" class="border border-dark quantity-right-plus btn input-quantity-btn" data-type="plus">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
                                 </td>
                                 <td>
-                                    <div class="row" style=" margin-top:80px ;"></div>
-                                    <span class="text-danger label" id="txtTong" style="font-weight: bold;">99.000</span>
-                                    <button type="button" class="btn btn-primary" style="margin-left:100px ;">Xóa</button>
+                                    <div class="row" style=" margin-top:80px ;">
+                                     <input type="text" name="txtTong" id="txtTong" class="text-danger label" value="99.000" style="border: none; font-weight: bold;padding-left: 30px;">
+                                    </div>
+                                  
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary" style=" margin-top:80px ;">Xóa</button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div style="text-align: left;">
-                                        <input type="checkbox" name="txtSP" id="txtSP">
+                                        <input type="checkbox" name="txtSP" id="txtSP" checked>
                                     </div>
                                     <img class="img-thumbnail img-SP " src="../img/books/image2.jpg" alt="" align="left">
                                     <p class="label" style="margin-top:35px ;">Doraemon </p>
                                     <br>
-                                    <p id="txtDG" class="label">16.000</p>
+                                    <input type="text" id="txtDG" value="16.000" class="label" style="border: none ;">
                                 </td>
                                 <td>
-                                    <button type="button " class="btn-light btn-SP">+</button>
-                                    <span id="txtSL">1</span>
-                                    <button type="button " class="btn-light btn-SP">-</button>
+                                    <div class="prd-quantity mt-3 d-flex justify-content-start align-items-center" style="padding-top:60px ;" >
+                                        <button type="button" id="btngiam" class="border border-dark input-quantity-btn quantity-left-minus btn btn-light" data-type="minus">
+                                                <i class="fas fa-minus"></i>
+                                        </button>
+                                        <input type="text" id="txtSL" class="form-control input-number" value="1" data-max="20">
+                                        <button type="button" id="btntang"  class="border border-dark quantity-right-plus btn input-quantity-btn" data-type="plus">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
                                 </td>
                                 <td>
-                                    <div class="row" style=" margin-top:80px ;"></div>
-                                    <span class="text-danger label" id="txtTong" style="font-weight: bold;">16.000</span>
-                                    <button type="button" class="btn btn-primary" style="margin-left:100px ;">Xóa</button>
+                                    <div class="row" style=" margin-top:80px ;">
+                                   
+                                        <input type="text" name="txtTong" id="txtTong" class="text-danger label" value="16.000" style="border: none; font-weight: bold;padding-left: 30px;">
+                                   </div>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary" style="margin-top:80px ;">Xóa</button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div style="text-align: left;">
-                                        <input type="checkbox" name="txtSP" id="txtSP">
+                                        <input type="checkbox" name="txtSP" id="txtSP" checked>
                                     </div>
                                     <img class="img-thumbnail img-SP " src="../img/books/image3.jpg" alt="" align="left">
                                     <p class="label" style="margin-top:35px ;">Từ ngữ Anh - Việt</p>
                                     <br>
-                                    <p id="txtDG" class="label">65.000</p>
+                                    <input type="text" name="txtDG" id="txtDG" value="65.000" class="label" style="border: none ;">
                                 </td>
                                 <td>
-                                    <button type="button " class="btn-light btn-SP">+</button>
-                                    <span id="txtSL">1</span>
-                                    <button type="button " class="btn-light btn-SP">-</button>
+                                    <div class="prd-quantity mt-3 d-flex justify-content-start align-items-center" style="padding-top:60px ;" >
+                                        <button type="button" id="btngiam" class="border border-dark input-quantity-btn quantity-left-minus btn btn-light" data-type="minus">
+                                                <i class="fas fa-minus"></i>
+                                        </button>
+                                        <input type="text" id="txtSL" class="form-control input-number" value="1" data-max="20">
+                                        <button type="button" id="btntang" class="border border-dark quantity-right-plus btn input-quantity-btn" data-type="plus">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
                                 </td>
                                 <td>
-                                    <div class="row" style=" margin-top:80px ;"></div>
-                                    <span class="text-danger label" id="txtTong" style="font-weight: bold; ">65.000</span>
-                                    <button type="button" class="btn btn-primary" style="margin-left:100px ;">Xóa</button>
+                                    <div class="row" style=" margin-top:80px ;">
+                                        <input type="text" name="txtTong" id="txtTong" class="text-danger label" value="65.000" style="border: none; font-weight: bold;padding-left: 30px;">
+                                    </div>
+                                    
                                 </td>
-
+                                <td>
+                                    <button type="button" class="btn btn-primary" style="margin-top:80px ;">Xóa</button>
+                                </td>
                             </tr>
 
                         </tbody>
@@ -221,7 +257,7 @@
 
                                 </td>
                                 <td>
-                                    <span id="txtThanhTien" class="text-danger" style="font-weight: bold; padding-left: 190px; font-size: 20px;">180.000</span>
+                                   <input type="text" name="txtThanhTien" id="txtThanhTien" class="label text-danger" style="font-weight:bold ; border: none; text-align: right; width: 300px;" value="180.000">
                                 </td>
                             </tr>
                             <tr>

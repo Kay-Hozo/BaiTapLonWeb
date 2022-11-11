@@ -159,28 +159,68 @@ $(document).ready(function()
    var txtTong=$("#txtTong");
    var dongia=0;
    var tong=0;
-   var btngiam=$("#btngiam");
-   var btntang=$("#btntang");
-   btngiam.click(function()
-   {
-       i= parseInt(txtSL.val());
-       dongia=parseFloat(txtDG.val());
-       tong=parseFloat(txtTong.val());
-       if(i>=1)
-       {
-           txtSL.val(i-1);
-           txtTong.val((tong-dongia)+".000");
-       }
-      
-   });
-   btntang.click(function()
-   {
-       i=parseInt(txtSL.val());
-       dongia=parseFloat(txtDG.val());
-       tong=parseFloat(txtTong.val());
-       txtSL.val(i+1);
-       txtTong.val((tong+dongia)+".000");
-   });
-  
+
+$("#btngiam").click(function()
+{
+i= parseInt(txtSL.val());
+dongia=parseFloat(txtDG.val());
+tong=parseFloat(txtTong.val());
+if(i>=1)
+{
+  txtSL.val(i-1);
+  txtTong.val((tong-dongia)+".000");
+}
+
+});
+$("#btntang").click(function()
+{
+i=parseInt(txtSL.val());
+dongia=parseFloat(txtDG.val());
+tong=parseFloat(txtTong.val());
+txtSL.val(i+1);
+txtTong.val((tong+dongia)+".000");
+});
+$("#btn-left").click(function()
+{
+i= parseInt($("#txtSL1").val());
+dongia=parseFloat($("#txtDG1").val());
+tong=parseFloat($("#txtTong1").val());
+if(i>=1)
+{
+  $("#txtSL1").val(i-1);
+  $("#txtTong1").val((tong-dongia)+".000");
+}
+});
+$("#btn-right").click(function()
+{
+i= parseInt($("#txtSL1").val());
+dongia=parseFloat($("#txtDG1").val());
+tong=parseFloat($("#txtTong1").val());
+$("#txtSL1").val(i+1);
+$("#txtTong1").val((tong+dongia)+".000");
+})
+$("#btn-left-1").click(function(){
+   i= parseInt($("#txtSL2").val());
+dongia=parseFloat($("#txtDG2").val());
+tong=parseFloat($("#txtTong2").val());
+if(i>=1)
+{
+  $("#txtSL2").val(i-1);
+  $("#txtTong2").val((tong-dongia)+".000");
+}
+});
+$("#btn-right-1").click(function()
+{
+   i= parseInt($("#txtSL2").val());
+dongia=parseFloat($("#txtDG2").val());
+tong=parseFloat($("#txtTong2").val());
+$("#txtSL2").val(i+1);
+ $("#txtTong2").val((tong+dongia)+".000");
+})
+//modal
+$("#btnModal").click(function()
+{
+    $("#myModal").modal();
+})
 });
 

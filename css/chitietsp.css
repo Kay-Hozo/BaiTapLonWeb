@@ -76,8 +76,10 @@
 
 .tab-title:hover {
     background-color: var(--primary-grey-color);
-    color: var(--primary-black-color);
+    color:var(--primary-blue-color);
     text-decoration: none;
+    
+
 }
 
 

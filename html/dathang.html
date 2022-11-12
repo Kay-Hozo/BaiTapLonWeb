@@ -68,7 +68,7 @@
                                         <div class="notify-content col-md-10">
                                             <p class="notify-title text-left text-danger">BOM TẤN KHUYẾN MÃI!!!</p>
                                             <p class="notify-detail text-left"> 
-                                                <img src="../img/thongbao/khuyenmai.png" alt="" width="50" height="70" style="margin-right: 15px;" class="float-left img-thumbnail">
+                                                <img src="../img/thongbao/khuyenmai.png" alt=""  class="float-left img-thumbnail img-notification">
                                                 <b> Mừng khách hàng mới giảm ngay 50% trên sản phẩm</b> 
                                                
                                             </p>
@@ -83,7 +83,7 @@
                                         <div class="notify-content col-md-10">
                                             <p class="notify-title text-left text-danger">"KÈO THƠM"!VOUCHER 100K LÊN SÀN</p>
                                             <p class="notify-detail text-left">
-                                               <img src="../img/thongbao/khuyenmai2.png" alt="" width="50" height="70" style="margin-right: 15px;" class="float-left img-thumbnail">
+                                               <img src="../img/thongbao/khuyenmai2.png" alt=""  class="float-left img-thumbnail img-notification">
                                                 <b>
                                                    
                                                     Sales sập sàn giảm ngay 100K cho đơn hàng 500K
@@ -125,7 +125,7 @@
                     </h3>
                 </div>
 
-                <div style="padding-left: 10px; padding-top: 20px;">
+                <div class="input-order">
                     <form class="form">
                         <div class="row">
                             <div class="col-6 col-sm-5">
@@ -230,7 +230,7 @@
                 <div class="order-title">
                     <h3>PHƯƠNG THỨC VẬN CHUYỂN</h3>
                 </div>
-                <div class="mt-3 mb-3" style="padding-left: 10px;">
+                <div class="mt-3 mb-3 pl-3" >
                     <p class="label">Quý khách vui lòng điền tên và địa chỉ giao nhận trước.</p>
                 </div>
             </div>
@@ -238,7 +238,7 @@
                 <div class="order-title">
                     <div class="row">
                         <h3 class="col-md-8">PHƯƠNG THỨC THANH TOÁN</h3>
-                       <select class="label col-md-3" name="txtTT" id="txtTT" style="border: none;">
+                       <select class="label col-md-3 pay" name="txtTT" id="txtTT" >
                         <option value="1">Chọn phương thức thanh toán</option>
                         <option value="2">Thanh toán bằng ví MoMo</option>
                         <option value="3">Thanh toán bằng ví ZaloPay</option>
@@ -252,7 +252,7 @@
               
             </div>
             <div class="container mt-3 bg-white rounded p-3">
-                <div class="bg-light" style="padding-top: 10px; padding-left: 10px; border: 1px solid black;">
+                <div class="bg-light input-sales">
                     <a href="#" style="text-decoration: none;">
                         <div class="row">
                             <h3 class="col-md-12">CHỌN MÃ KHUYẾN MÃI</h3>
@@ -283,6 +283,16 @@
                         </div>
                         <div class="info-product col-md-11">
                             <h6>Doraemon</h6>
+                            <h6 class="text-danger">16.000</h6>
+                            <h6>Số lượng : 1 </h6>
+                        </div>
+                    </li>
+                    <li class="product-item-order p-3 row">
+                        <div class="product-img col-md-1">
+                            <img class="img-thumbnail w-100" src="../img/books/image3.jpg" alt="">
+                        </div>
+                        <div class="info-product col-md-11">
+                            <h6>Từ điển Anh-Việt</h6>
                             <h6 class="text-danger">65.000</h6>
                             <h6>Số lượng : 1 </h6>
                         </div>
@@ -291,19 +301,19 @@
                 <div style="padding-top: 10px; padding-bottom: 20px;">
                     <div class="row">
                         <h5 class="col-11">Thành tiền</h5>
-                        <h5 class="col-1 text-danger" style="font-weight:bold ;">164.000</h5>
+                        <h5 class="col-1 text-danger btn-order">180.000</h5>
                     </div>
                 </div>
             </div>
             <div class="container mt-3 bg-white rounded p-3">
-                <div style="padding-top:10px ; padding-bottom: 20px;">
+                <div class="input-order">
                     <div class="row">
-                        <h5 class="col-11" style="font-weight:bold ;">Tổng Số Tiền (Gồm VAT)</h5>
-                        <h5 class="col-1 text-danger" style="font-weight:bold ;">164.000</h5>
+                        <h5 class="col-11 btn-order">Tổng Số Tiền (Gồm VAT)</h5>
+                        <h5 class="col-1 text-danger btn-order">180.000</h5>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-primary btn-block mb-3" style="margin-right: 5px; font-size: 20px; width: 200px;">Xác nhận đặt hàng</button>
+                    <button type="button" class="btn btn-primary btn-block mb-3 btn-pay" >Xác nhận đặt hàng</button>
                 </div>
 
             </div>

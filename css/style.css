@@ -179,10 +179,16 @@ li:hover>.notify-box {
 }
 
 .notify-title {
-    font-size: 0.8rem;
+    --line-height: 26px;
     margin-bottom: 0;
     font-weight: bold;
     font-size: 16px;
+    line-height: var(--line-height);
+    height: calc(var(--line-height)*1);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
 .notify-detail {
@@ -305,7 +311,75 @@ footer p {
     margin-right: 20px;
     margin-left: 40px;
 }
-.product-width
-{
+
+.product-width {
     height: 320px;
+}
+.img-notification
+{
+    
+    width: 50px;
+    margin-right: 15px;
+    height: 70px;
+}
+.p-title{
+   margin-top:35px ;
+}
+.tr-product
+{
+    padding-top:60px ;
+}
+.p-total
+{
+    padding-left: 30px; margin-top:80px;
+}
+.delete
+{
+     margin-top:80px;
+}
+.btn-sales{
+    padding-left: 160px;
+}
+.sum-total
+{
+ text-align:right; width: 300px;
+}
+.btn-order
+{
+    font-weight: bold;
+}
+.frm-top
+{
+    margin-bottom:20px ;
+}
+.text-notification
+{
+    text-align: center;
+}
+.input-OTP
+{
+   border-left: none;
+}
+.label-final
+{
+   text-align:center ; padding-bottom: 20px;
+}
+.input-order
+{
+   padding-left: 10px; padding-top: 20px;
+}
+.pay
+{
+    border: none;
+}
+.input-sales
+{
+    padding-top: 10px; padding-left: 10px; border: 1px solid black;
+}
+.input-order{
+   padding-top:10px ; padding-bottom: 20px;
+}
+.btn-pay
+{
+   margin-right: 5px; font-size: 20px; width: 200px;
 }

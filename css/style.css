@@ -179,10 +179,16 @@ li:hover>.notify-box {
 }
 
 .notify-title {
-    font-size: 0.8rem;
+    --line-height: 26px;
     margin-bottom: 0;
     font-weight: bold;
     font-size: 16px;
+    line-height: var(--line-height);
+    height: calc(var(--line-height)*1);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
 .notify-detail {
@@ -305,7 +311,7 @@ footer p {
     margin-right: 20px;
     margin-left: 40px;
 }
-.product-width
-{
+
+.product-width {
     height: 320px;
 }

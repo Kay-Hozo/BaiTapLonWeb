@@ -41,7 +41,7 @@
                         <a href="" class="nav-link"><i class="fas fa-user"></i></a>
                         <ul class="submenu bg-white">
                             <li class="">
-                                <a href="../html/dangnhap.html" class="nav-link">
+                                <a href="#" class="nav-link" id="btnModal">
                                     <input type="button" value="Đăng nhập" class="btn btn-primary btn-block">
                                 </a>
                             </li>
@@ -117,6 +117,44 @@
                 </ul>
             </div>
         </nav>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                      <div class="modal-header">
+                          <h3 class="text-notification">ĐĂNG NHẬP</h3>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                              <form class="form mt-3">
+                                  <div class="form-group frm-top">
+                                      <label for="txtSDT" class="label">Số điện thoại</label><br>
+                                      <input type="text" name="txtSDT" id="txtSDT" class="form-control" placeholder="Nhập số điện thoại" required>
+                                      <span class="text-danger" id="tbSDT"></span>
+                                  </div>
+                                  <div class="form-group frm-top">
+                                      <label for="txtPass" class="label">Mật khẩu</label><br>
+                                      <div class="input-group">
+                                          <input type="password" name="txtPass" id="txtPass" placeholder="Nhập mật khẩu" class="form-control">
+                                          <div class="input-group-append">
+                                              <button class="btn btn-outline-secondary " type="button" id="btnPass">
+                                                  <span class="fas fa-eye" ></span>
+                                              </button>
+                                          </div>
+                                      </div>
+                                      <span class="text-danger span-MK"  id="tbMK"></span>
+                                  </div>
+                                  <div id="thongbao1"><a href="#" class="text-danger label">Quên mật khẩu?</a></div><br>
+                                  <div id="thongbao2" class="text-danger" ></div>
+                                  <div class="form-group">
+                                      <button type="button" class="btn btn-primary btn-block" id="txtDN" disabled>Đăng nhập</button><br>
+                                      <button type="button" class="btn btn-info btn-block" id="txtDNF">Đăng nhập bằng facebook</button>
+                                      <br>
+                                  </div>
+                              </form>
+                        </div>
+              </div>
+            </div>
+          </div>
         <div class="content">
             <div class="container rounded bg-white p-3">
                 <h3>GIỎ HÀNG</h3>

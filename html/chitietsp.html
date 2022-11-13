@@ -36,7 +36,7 @@
                     <li class="cart nav-item">
                         <a href="giohang.html" class="nav-link">
                             <i class="fas fa-shopping-cart"></i>
-                            <span class="has-cart">3</span>
+                            <span id="cart-count" class="has-cart">3</span>
                         </a>
                         <div class="notify-box">
                             <h6 class="notify-heading">Giỏ hàng</h6>
@@ -174,12 +174,12 @@
                     <div class="row">
                         <div class="col-sm-4 col-lg-4">
                             <div class="prd-img border border-dark">
-                                <img src="./../img/books/image1.jpg" class="w-100" alt="Product image">
+                                <img src="./../img/books/image1.jpg" class="w-100" alt="Product image" id="product-img">
                             </div>
                         </div>
                         <div class="col-sm-8 col-lg-8">
                             <div class="prd-info">
-                                <h3 class="font-weight-bold">
+                                <h3 class="font-weight-bold" id="product-title">
                                     Người Giàu Có Nhất Thành Babylon
                                 </h3>
                                 <p class="h4 prd-author mt-3">Tác giả: George S Clason</p>
@@ -190,7 +190,7 @@
                                     <li class="fa fa-star text-warning"></li>
                                     <li class="fa fa-star text-warning"></li>
                                 </ul>
-                                <p class="h3 prd-price font-weight-bold">99.000</p>
+                                <p class="h3 prd-price font-weight-bold" id="product-price">99.000</p>
                                 <div class="prd-quantity mt-3 d-flex justify-content-start align-items-center">
                                     <button type="button" class="border border-dark input-quantity-btn quantity-left-minus btn btn-light" data-type="minus">
                                             <i class="fas fa-minus"></i>
@@ -274,8 +274,7 @@
                                     </p>
                                 </div>
                                 <div class="tab-pane" id="prd-review">
-                                    <h6 class="font-weight-bold mt-3">Đánh giá</h6>
-                                    <div class="rating">
+                                    <div class="rating mt-3">
                                         <div class="ave-rating d-flex align-items-center">
                                             <p class="h2 ave-rating-result font-weight-bold">5.00</p>
                                             <div class="ml-3">

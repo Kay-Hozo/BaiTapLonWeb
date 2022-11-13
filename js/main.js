@@ -50,6 +50,7 @@ $(document).ready(function() {
         return false;
     }
     txtPass.blur(KiemTraDK);
+
     $("#txtDN").click(function() {
         alert("Đăng nhập thành công");
     })
@@ -242,8 +243,8 @@ $(document).ready(function() {
     var tong = 0;
     var btnGiam = $(".btngiam");
     var btnTang = $(".btntang");
-    var btnXoa = $(".btn-delete")
-    var sanPham = $(".cart-table tr")
+    var btnXoa = $(".btn-delete");
+    var sanPham = $(".cart-table tr");
 
     // Tìm id của cha 
     function layIDSanPhamCha(PhanTu) {
@@ -331,4 +332,32 @@ $(document).ready(function() {
         var temp = chuoiGT.replace('.000', '')
         return temp
     }
+
+    $(".prd-btn-input").click(function() {
+        var count = $("span#cart-count")
+        var countVal = $("span#cart-count").html()
+        var imgSRC = $("#product-img").attr('src')
+        var name = $("#product-title").html()
+        var price = $("#product-price").html()
+        var number = $("#txtQuantity").val()
+        var html = `
+        <li class="w-100 nav-item border-bottom border-light">
+            <a href="./chitietsp.html" class="notify-link row">
+                <span class="notify-img col-md-3 d-flex align-items-center justify-content-end">
+                    <span class="w-100 p-2">
+                        <img src="${imgSRC}" alt="" class="w-100">
+                    </span>
+                </span>
+                <div class="notify-content col-md-9">
+                    <p class="notify-title text-left">${name}</p>
+                    <p class="text-left text-dark">
+                        ${price}
+                        <span class="number">x ${number}</span>
+                    </p>
+                </div>
+            </a>
+        </li>`
+        count.html(parseInt(countVal) + 1)
+        $('.cart-mini').append(html)
+    })
 });

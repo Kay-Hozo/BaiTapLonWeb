@@ -105,17 +105,29 @@ li:hover>.submenu {
 }
 
 
-/* Notify box */
+/* Cart */
 
-.has-notify {
-    width: 10px;
-    height: 10px;
+.has-cart {
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    color: var(--white-color);
+    background-color: #dc3545;
     border-radius: 50%;
-    top: 12%;
-    left: 58%;
+    border: 1px solid var(--primary-black-color);
     position: absolute;
-    background-color: red;
+    top: 0;
+    right: 8%;
 }
+
+.cart-mini li:hover {
+    background-color: var(--primary-grey-color);
+}
+
+
+/* Notify box */
 
 .notify-heading,
 .notify-footer {
@@ -315,71 +327,82 @@ footer p {
 .product-width {
     height: 320px;
 }
-.img-notification
-{
-    
+
+.img-notification {
     width: 50px;
     margin-right: 15px;
     height: 70px;
 }
-.p-title{
-   margin-top:35px ;
+
+.p-title {
+    margin-top: 35px;
 }
-.tr-product
-{
-    padding-top:60px ;
+
+.tr-product {
+    padding-top: 60px;
 }
-.p-total
-{
-    padding-left: 30px; margin-top:80px;
+
+.p-total {
+    padding-left: 30px;
+    margin-top: 80px;
 }
-.delete
-{
-     margin-top:80px;
+
+.delete {
+    margin-top: 80px;
 }
-.btn-sales{
+
+.btn-sales {
     padding-left: 160px;
 }
-.sum-total
-{
- text-align:right; width: 300px;
+
+.sum-total {
+    text-align: right;
+    width: 300px;
 }
-.btn-order
-{
+
+.btn-order {
     font-weight: bold;
 }
-.frm-top
-{
-    margin-bottom:20px ;
+
+.frm-top {
+    margin-bottom: 20px;
 }
-.text-notification
-{
+
+.text-notification {
     text-align: center;
 }
-.input-OTP
-{
-   border-left: none;
+
+.input-OTP {
+    border-left: none;
 }
-.label-final
-{
-   text-align:center ; padding-bottom: 20px;
+
+.label-final {
+    text-align: center;
+    padding-bottom: 20px;
 }
-.input-order
-{
-   padding-left: 10px; padding-top: 20px;
+
+.input-order {
+    padding-left: 10px;
+    padding-top: 20px;
 }
-.pay
-{
+
+.pay {
     border: none;
 }
-.input-sales
-{
-    padding-top: 10px; padding-left: 10px; border: 1px solid black;
+
+.input-sales {
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid black;
 }
-.input-order{
-   padding-top:10px ; padding-bottom: 20px;
+
+.input-order {
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
-.btn-pay
-{
-   margin-right: 5px; font-size: 20px; width: 200px;
+
+.btn-pay {
+    margin-right: 5px;
+    font-size: 20px;
+    width: 200px;
 }

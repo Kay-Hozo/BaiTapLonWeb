@@ -35,7 +35,66 @@
 
                 <ul class="header-exten menu navbar-nav navbar-expand-sm">
                     <li class="cart nav-item">
-                        <a href="giohang.html" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="giohang.html" class="nav-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="has-cart">3</span>
+                        </a>
+                        <div class="notify-box">
+                            <h6 class="notify-heading">Giỏ hàng</h6>
+                            <ul class="notify-list nav cart-mini">
+                                <li class="w-100 nav-item border-bottom border-light">
+                                    <a href="./chitietsp.html" class="notify-link row">
+                                        <span class="notify-img col-md-3 d-flex align-items-center justify-content-end">
+                                            <span class="w-100 p-2">
+                                                <img src="./../img/books/image1.jpg" alt="" class="w-100">
+                                            </span>
+                                        </span>
+                                        <div class="notify-content col-md-9">
+                                            <p class="notify-title text-left">Người Giàu Có Nhất Thành Babylon</p>
+                                            <p class="text-left text-dark">
+                                                99.000
+                                                <span class="number">x 1</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="w-100 nav-item border-bottom border-light">
+                                    <a href="./chitietsp.html" class="notify-link row">
+                                        <span class="notify-img col-md-3 d-flex align-items-center justify-content-end">
+                                            <span class="w-100 p-2">
+                                                <img src="./../img/books/image2.jpg" alt="" class="w-100">
+                                            </span>
+                                        </span>
+                                        <div class="notify-content col-md-9">
+                                            <p class="notify-title text-left">Doraemon</p>
+                                            <p class="text-left text-dark">
+                                                16.000
+                                                <span class="number">x 1</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="w-100 nav-item">
+                                    <a href="./chitietsp.html" class="notify-link row">
+                                        <span class="notify-img col-md-3 d-flex align-items-center justify-content-end">
+                                            <span class="w-100 p-2">
+                                                <img src="./../img/books/image3.png" alt="" class="w-100">
+                                            </span>
+                                        </span>
+                                        <div class="notify-content col-md-9">
+                                            <p class="notify-title text-left">Từ điển Anh-Việt</p>
+                                            <p class="text-left text-dark">
+                                                65.000
+                                                <span class="number">x 1</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="notify-footer">
+                                <a href="./giohang.html" class="w-100 btn btn-primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="account nav-item">
                         <a href="#" class="nav-link" ><i class="fas fa-user"></i></a>
@@ -55,7 +114,7 @@
                     <li class="notify nav-item">
                         <a href="" class="nav-link">
                             <i class="fas fa-bell"></i>
-                            <span class="has-notify"></span>
+                            <span class="has-cart">1</span>
                         </a>
                         <div class="notify-box">
                             <h6 class="notify-heading">Thông báo</h6>
@@ -79,7 +138,7 @@
                                         </span>
                                         <div class="notify-content col-md-10">
                                             <p class="notify-title text-left">Đăng ký tài khoản để nhận thật nhiều ưu đãi từ Bookstore.com!</p>
-                                            <p class="notify-detail text-left">Hãy đăng kí tài khoản tại Fahasa để nhận được các thông báo quà tặng dành cho khách hàng mới! Click ngay vào đây để cập nhật. Đừng quên tiếp tục tham gia mua sắm để nhận được những ưu đãi dành riêng cho khách
+                                            <p class="notify-detail text-left">Hãy đăng kí tài khoản tại Bookstore để nhận được các thông báo quà tặng dành cho khách hàng mới! Click ngay vào đây để cập nhật. Đừng quên tiếp tục tham gia mua sắm để nhận được những ưu đãi dành riêng cho khách
                                                 hàng mới tại Bookstore.com.
                                             </p>
                                         </div>
@@ -112,42 +171,43 @@
         </nav>
         <div class="modal fade" id="myModal">
             <div class="modal-dialog">
-              <div class="modal-content">
+                <div class="modal-content">
                       <div class="modal-header">
-                          <h3 class="text-notification">ĐĂNG NHẬP</h3>
+                          <h3>ĐĂNG NHẬP</h3>
                           <button type="button" class="close" data-dismiss="modal">&times;</button>
                       </div>
                       <div class="modal-body">
-                              <form class="form mt-3">
-                                  <div class="form-group frm-top">
-                                      <label for="txtSDT" class="label">Số điện thoại</label><br>
-                                      <input type="text" name="txtSDT" id="txtSDT" class="form-control" placeholder="Nhập số điện thoại" required>
-                                      <span class="text-danger" id="tbSDT"></span>
-                                  </div>
-                                  <div class="form-group frm-top">
-                                      <label for="txtPass" class="label">Mật khẩu</label><br>
-                                      <div class="input-group">
-                                          <input type="password" name="txtPass" id="txtPass" placeholder="Nhập mật khẩu" class="form-control">
-                                          <div class="input-group-append">
-                                              <button class="btn btn-outline-secondary " type="button" id="btnPass">
-                                                  <span class="fas fa-eye" ></span>
-                                              </button>
-                                          </div>
-                                      </div>
-                                      <span class="text-danger span-MK"  id="tbMK"></span>
-                                  </div>
-                                  <div id="thongbao1"><a href="#" class="text-danger label">Quên mật khẩu?</a></div><br>
-                                  <div id="thongbao2" class="text-danger" ></div>
-                                  <div class="form-group">
-                                      <button type="button" class="btn btn-primary btn-block" id="txtDN" disabled>Đăng nhập</button><br>
-                                      <button type="button" class="btn btn-info btn-block" id="txtDNF">Đăng nhập bằng facebook</button>
-                                      <br>
-                                  </div>
-                              </form>
-                        </div>
-              </div>
+                        <form class="form mt-3">
+                            <div class="form-group frm-top">
+                                <label for="txtSDT" class="label">Số điện thoại</label><br>
+                                <input type="text" name="txtSDT" id="txtSDT" class="form-control" placeholder="Nhập số điện thoại" required>
+                                <span class="text-danger" id="tbSDT"></span>
+                            </div>
+                            <div class="form-group frm-top">
+                                <label for="txtPass" class="label">Mật khẩu</label><br>
+                                <div class="input-group">
+                                    <input type="password" name="txtPass" id="txtPass" placeholder="Nhập mật khẩu" class="form-control">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary " type="button" id="btnPass">
+                                            <span class="fas fa-eye" ></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="text-danger span-MK"  id="tbMK"></span>
+                            </div>
+                            <div id="thongbao1"><a href="#" class="text-danger label">Quên mật khẩu?</a></div><br>
+                            <div id="thongbao2" class="text-danger" ></div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary btn-block" id="txtDN" disabled>Đăng nhập</button><br>
+                                <button type="button" class="btn btn-info btn-block" id="txtDNF">Đăng nhập bằng facebook</button>
+                                <br>
+                            </div>
+                        </form>
+                      </div>
             </div>
-          </div>
+         </div>
+        </div>
+                    
         <div class="content">
             <div class="container">
                 <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -232,7 +292,7 @@
                             <div class="product-box col-3 col-lg-md-4 col-sm-6 col-lg-3">
                                 <a href="./chitietsp.html" class="product-link">
                                     <div class="card w-100 product-item">
-                                        <img class="card-img-top product-width" src="./../img/books/image3.jpg" alt="Product image">
+                                        <img class="card-img-top product-width" src="./../img/books/image3.png" alt="Product image">
                                         <div class="card-body">
                                             <p class="product-title">Từ điển Anh-Việt</p>
                                             <p class="card-subtitle text-danger product-price">65.000 đ</p>

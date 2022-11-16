@@ -1,8 +1,7 @@
 $(document).ready(function() {
     var txtSDT = $("#txtSDT");
     var txtPass = $("#txtPass");
-    var txtSDT1=$("#txtSDT1");
-    var txtPass1=$("#txtPass1");
+
     function KiemTraSDT() {
         var mau = /^(0)\d{9}$/;
 
@@ -18,21 +17,6 @@ $(document).ready(function() {
         return true;
     }
     txtSDT.blur(KiemTraSDT);
-    function KiemTraSDT1() {
-        var mau = /^(0)\d{9}$/;
-
-        if (txtSDT1.val() == "") {
-            $("#tbSDT1").html("Điền SDT");
-            return false;
-        }
-        if (!mau.test(txtSDT1.val())) {
-            $("#tbSDT1").html("Số điện thoại không phù hợp");
-            return false;
-        }
-        $("#tbSDT1").html("");
-        return true;
-    }
-    txtSDT1.blur(KiemTraSDT1);
 
     function KiemTraPass() {
         var mau = /^[A-Za-z0-9(!@#$%^&*()_]{6,20}$/;
@@ -48,20 +32,6 @@ $(document).ready(function() {
         return true;
     }
     txtPass.blur(KiemTraPass);
-    function KiemTraPass1() {
-        var mau = /^[A-Za-z0-9(!@#$%^&*()_]{6,20}$/;
-        if (txtPass1.val() == "") {
-            $("#tbMK1").html("Điền mật khẩu");
-            return false;
-        }
-        if (!mau.test(txtPass1.val())) {
-            $("#tbMK1").html("Mật khẩu không phù hợp");
-            return false;
-        }
-        $("#tbMK1").html("");
-        return true;
-    }
-    txtPass1.blur(KiemTraPass1);
 
     function KiemTraDN() {
         if (KiemTraSDT() == true && KiemTraPass() == true) {
@@ -73,13 +43,13 @@ $(document).ready(function() {
     txtPass.blur(KiemTraDN);
 
     function KiemTraDK() {
-        if (KiemTraSDT1() == true && KiemTraPass1() == true && KiemTraOTP() == true) {
+        if (KiemTraSDT() == true && KiemTraPass() == true && KiemTraOTP() == true) {
             $("#txtDK").removeAttr("disabled");
             return true;
         }
         return false;
     }
-    txtPass1.blur(KiemTraDK);
+    txtPass.blur(KiemTraDK);
 
     $("#txtDN").click(function() {
         alert("Đăng nhập thành công");
@@ -87,6 +57,7 @@ $(document).ready(function() {
     $("#txtDK").click(function() {
         alert("Đăng ký thành công");
     })
+
     var txtOTP = $("#txtOTP");
 
     function KiemTraOTP() {
@@ -104,6 +75,7 @@ $(document).ready(function() {
 
     }
     txtOTP.blur(KiemTraOTP);
+
     var txtHT = $("#txtHT");
     var tbHT = $("#tbHT");
 
@@ -121,6 +93,7 @@ $(document).ready(function() {
         return true;
     }
     txtHT.blur(KiemTraHT);
+
     var txtEmail = $("#txtEmail");
     var tbEmail = $("#tbEmail");
 
@@ -138,6 +111,7 @@ $(document).ready(function() {
         return true;
     }
     txtEmail.blur(KiemTraEmail);
+
     var txtDC = $("#txtDC");
     var tbDC = $("#tbDC");
 
@@ -182,7 +156,6 @@ $(document).ready(function() {
 
     $('#txtQuantity').change(ctrlQuantity)
 
-
     function ctrlQuantity(e) {
         quantity = parseInt($('#txtQuantity').val());
         if (quantity > maxQuantity) {
@@ -192,6 +165,7 @@ $(document).ready(function() {
             tbQuantity.html(' ');
         }
     }
+
     // giỏ hàng
     var i = 1;
     var txtSL = $("#txtSL");
@@ -208,7 +182,6 @@ $(document).ready(function() {
             txtSL.val(i - 1);
             txtTong.val((tong - dongia) + ".000");
         }
-
     });
     $("#btntang").click(function() {
         i = parseInt(txtSL.val());
@@ -217,44 +190,13 @@ $(document).ready(function() {
         txtSL.val(i + 1);
         txtTong.val((tong + dongia) + ".000");
     });
-    $("#btn-left").click(function() {
-        i = parseInt($("#txtSL1").val());
-        dongia = parseFloat($("#txtDG1").val());
-        tong = parseFloat($("#txtTong1").val());
-        if (i >= 1) {
-            $("#txtSL1").val(i - 1);
-            $("#txtTong1").val((tong - dongia) + ".000");
-        }
-    });
-    $("#btn-right").click(function() {
-        i = parseInt($("#txtSL1").val());
-        dongia = parseFloat($("#txtDG1").val());
-        tong = parseFloat($("#txtTong1").val());
-        $("#txtSL1").val(i + 1);
-        $("#txtTong1").val((tong + dongia) + ".000");
-    })
-    $("#btn-left-1").click(function() {
-        i = parseInt($("#txtSL2").val());
-        dongia = parseFloat($("#txtDG2").val());
-        tong = parseFloat($("#txtTong2").val());
-        if (i >= 1) {
-            $("#txtSL2").val(i - 1);
-            $("#txtTong2").val((tong - dongia) + ".000");
-        }
-    });
-    $("#btn-right-1").click(function() {
-            i = parseInt($("#txtSL2").val());
-            dongia = parseFloat($("#txtDG2").val());
-            tong = parseFloat($("#txtTong2").val());
-            $("#txtSL2").val(i + 1);
-            $("#txtTong2").val((tong + dongia) + ".000");
-        })
-        //modal
+
+    //modal
     $("#btnModal").click(function() {
         $("#myModal").modal();
     })
 
-    function ctrlQuantity(e) {
+    function ctrlQuantity() {
         quantity = parseInt($('#txtQuantity').val());
         if (quantity > maxQuantity) {
             $('#txtQuantity').val(maxQuantity);
@@ -315,7 +257,14 @@ $(document).ready(function() {
             txtSL.val(soLuongHienTai - 1);
             txtTong.html((tong - dongia) + ".000");
         } else {
-            xoaSP(id)
+            $("#confirmModal").modal();
+            $('#delete').click(function() {
+                xoaSP(id)
+                $("#confirmModal").modal('hide');
+            })
+            $('#unDelete').click(function() {
+                $("#confirmModal").modal('hide');
+            })
         }
 
         updateTongTien()
@@ -387,6 +336,7 @@ $(document).ready(function() {
                 </div>
             </a>
         </li>`
+
         count.html(parseInt(countVal) + 1)
         $('.cart-mini').append(html)
     })

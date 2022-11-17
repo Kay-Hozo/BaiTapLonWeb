@@ -41,15 +41,45 @@ $(document).ready(function() {
         return false;
     }
     txtPass.blur(KiemTraDN);
+    function KiemTraSDT1() {
+        var mau = /^(0)\d{9}$/;
+
+        if ($("#txtSDT1").val() == "") {
+            $("#tbSDT1").html("Điền SDT");
+            return false;
+        }
+        if (!mau.test($("#txtSDT1").val())) {
+            $("#tbSDT1").html("Số điện thoại không phù hợp");
+            return false;
+        }
+        $("#tbSDT1").html("");
+        return true;
+    }
+    $("#txtSDT1").blur(KiemTraSDT1);
+
+      function KiemTraPass1() {
+        var mau = /^[A-Za-z0-9(!@#$%^&*()_]{6,20}$/;
+        if ($("#txtPass1").val() == "") {
+            $("#tbMK1").html("Điền mật khẩu");
+            return false;
+        }
+        if (!mau.test($("#txtPass1").val())) {
+            $("#tbMK1").html("Mật khẩu không phù hợp");
+            return false;
+        }
+        $("#tbMK1").html("");
+        return true;
+    }
+    $("#txtPass1").blur(KiemTraPass1);
 
     function KiemTraDK() {
-        if (KiemTraSDT() == true && KiemTraPass() == true && KiemTraOTP() == true) {
+        if (KiemTraSDT1() == true && KiemTraPass1() == true && KiemTraOTP() == true) {
             $("#txtDK").removeAttr("disabled");
             return true;
         }
         return false;
     }
-    txtPass.blur(KiemTraDK);
+    $("#txtPass1").blur(KiemTraDK);
 
     $("#txtDN").click(function() {
         alert("Đăng nhập thành công");
